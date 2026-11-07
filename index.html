@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fff9f0">
+  
+  <meta name="description" content="Printable coloring books for little artists and grown-up daydreamers. Explore gentle adventures, calming patterns, and a free interactive coloring scene.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <title>Nile Coloring Books | A Little Color Goes a Long Way</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="intro" role="dialog" aria-label="Welcome to Nile Coloring Books"><div class="intro-inner"><div class="intro-dots" aria-hidden="true"><span style="--d:#ff7a3d"></span><span style="--d:#ffc83d"></span><span style="--d:#e85d75"></span><span style="--d:#77b89a"></span><span style="--d:#0f7c80"></span><span style="--d:#79b5df"></span></div><p class="intro-title">Nile <em>Coloring Books</em></p><p class="intro-sub">A little color goes a long way.</p><button type="button" id="intro-skip">Skip intro →</button></div></div>
+  <noscript><style>#intro{display:none!important}</style></noscript>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Nile Coloring Books home">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 35c5-5 8-5 13 0s8 5 13 0 8-5 11-3"/><path d="M21 28c-4-9-2-17 3-21 6 6 7 13 3 21M23 29c-8-6-14-6-18-3 5 7 11 9 18 7m2-4c8-6 14-6 18-3-5 7-11 9-18 7"/></svg>
+        <span>Nile<span class="brand-small">COLORING BOOKS</span></span>
+      </a>
+      <nav aria-label="Main navigation"><a href="#books" data-filter-link="kids">Kids</a><a href="#books" data-filter-link="adults">Adults</a><a href="#studio">Color a page</a></nav>
+      <a class="header-cta" href="#books">Explore books <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> A colorful little corner of the world</p>
+          <h1 id="hero-title">A blank page is the start of <em>something lovely.</em></h1>
+          <p class="hero-sub">Printable coloring books for little artists and grown-up daydreamers. Find a story to bring to life, one color at a time.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#books">Find your book <span aria-hidden="true">→</span></a><a class="button button-text" href="#studio">Try coloring a page <span aria-hidden="true">→</span></a></div>
+          <p class="hero-note"><span aria-hidden="true">✦</span> Digital books from $1.49 <span class="note-divider">·</span> Explore the bookshelf</p>
+        </div>
+        <div class="hero-art" aria-label="Covers of Little Nile Explorer and Nile Mandalas">
+          <span class="spark spark-a" aria-hidden="true">✳</span><span class="spark spark-b" aria-hidden="true">✧</span>
+          <div class="paper paper-back" aria-hidden="true"><img src="assets/covers/nile-mandalas-adults.webp" alt="" width="325" height="650" decoding="async"></div>
+          <div class="paper paper-front"><img src="assets/covers/little-nile-explorer.webp" alt="Little Nile Explorer coloring book cover" width="325" height="650" decoding="async" fetchpriority="high"></div>
+          <div class="hero-stamp">Made for<br><strong>curious<br>hands</strong><span>✳</span></div>
+          <p class="concept-label">Covers from the supplied books</p>
+        </div>
+      </div>
+      <div class="wave-divider" aria-hidden="true"><svg viewBox="0 0 1440 65" preserveAspectRatio="none"><path d="M0 34c180 49 310-31 510 1 220 35 340-32 530 0 150 25 300 4 400-16v46H0Z"/></svg></div>
+    </section>
+
+    <section class="paths wrap" aria-labelledby="paths-title"><div class="section-heading"><p class="eyebrow">A page for every kind of day</p><h2 id="paths-title">Who’s coloring today?</h2></div>
+      <div class="path-grid"><a class="path-card path-kids" href="#books" data-filter-link="kids"><div class="path-icon" aria-hidden="true"><svg viewBox="0 0 48 48"><path d="M12 30c0-10 7-17 16-17 7 0 12 5 12 11 0 7-7 13-17 13-7 0-11-3-11-7Z"/><path d="M21 14c-3-5-2-8 2-10m2 9c1-5 4-7 8-6M10 27 2 31l9 2m24 2 4 9m-13-7-1 8"/><circle cx="31" cy="22" r="1.5"/></svg></div><div><span class="mini-label">FOR LITTLE HANDS · AGES 4–7</span><h3>Make a little adventure</h3><p>Friendly animals, school days, sunny seaside stories and plenty of room for imagination.</p><span class="path-link">Explore kids’ books <span aria-hidden="true">→</span></span></div><span class="path-doodle" aria-hidden="true">☀</span></a>
+      <a class="path-card path-adults" href="#books" data-filter-link="adults"><div class="path-icon" aria-hidden="true">❀</div><div><span class="mini-label">FOR A QUIETER MOMENT</span><h3>Take a creative pause</h3><p>Patterns and playful details for the moments you want to slow down and make something yours.</p><span class="path-link">Explore adult books <span aria-hidden="true">→</span></span></div><span class="path-doodle" aria-hidden="true">✺</span></a></div>
+    </section>
+
+    <section class="studio-section" id="studio" aria-labelledby="studio-title"><div class="wrap studio-grid">
+      <div class="studio-intro"><p class="eyebrow eyebrow-light">THE LITTLE COLORING STUDIO</p><h2 id="studio-title">Go on.<br><em>Make it yours.</em></h2><p>Pick a color, then tap a shape. This original Nile scene is a tiny interactive taste of the fun—book pages are shown separately.</p><div class="studio-steps"><span><b>01</b> Pick a color</span><span><b>02</b> Tap the picture</span><span><b>03</b> Smile & repeat</span></div><div class="studio-caption"><span aria-hidden="true">↓</span> Your masterpiece starts here</div></div>
+      <div class="studio-workspace"><div class="drawing-top"><span><i aria-hidden="true"></i> COLORING PAPER</span><span id="progress-text" aria-live="polite">0 areas colored</span></div>
+      <div class="drawing-layout"><div class="drawing-paper">
+          <svg id="coloring-scene" viewBox="0 0 720 520" role="group" aria-label="Interactive Nile scene with a boat, sun, clouds, a pyramid, fish, and lotus flowers. Choose a color then tap a shape." xmlns="http://www.w3.org/2000/svg">
+            <rect class="region" data-name="sky" x="8" y="8" width="704" height="504" rx="12"/>
+            <path class="region" data-name="left hill" d="M8 277Q82 220 170 259Q238 210 315 264V338H8Z"/>
+            <path class="region" data-name="right hill" d="M474 263Q525 217 593 260Q652 223 712 268V339H474Z"/>
+            <path class="region" data-name="pyramid" d="M516 271L579 145 644 271Z"/>
+            <path class="scene-line" d="M579 145v126M547 208h64"/>
+            <path class="region" data-name="river" d="M8 331Q86 305 153 331T296 331T439 331T583 331T712 331V512H8Z"/>
+            <circle class="region" data-name="sun" cx="109" cy="105" r="42"/>
+            <path class="scene-line" d="M109 43V28M109 182v-14M48 105H32m153 0h-15M64 60 53 49m110 111-11-11M154 59l11-11M64 151l-11 11"/>
+            <path class="region" data-name="left cloud" d="M237 105q-8-20 12-31 18-11 33 5 11-28 39-25 26 1 29 29 21-2 26 17 5 22-18 24H254q-23 0-17-19Z"/>
+            <path class="region" data-name="right cloud" d="M476 87q-4-16 11-23 15-7 26 6 10-22 31-18 20 3 22 24 18-1 22 14 4 17-16 20h-77q-20 0-19-23Z"/>
+            <path class="region" data-name="boat hull" d="M207 335h255q-29 58-133 63-99-3-122-63Z"/>
+            <path class="region" data-name="left sail" d="M327 157v174H234q35-110 93-174Z"/>
+            <path class="region" data-name="right sail" d="M337 157v174h103q-39-111-103-174Z"/>
+            <path class="scene-line" d="M332 155v180M225 349h220"/>
+            <path class="region" data-name="boat flag" d="M332 157v-31l47 14-47 17Z"/>
+            <path class="region" data-name="left fish body" d="M74 416q41-38 88 0-46 40-88 0Z"/>
+            <path class="region" data-name="left fish tail" d="M75 416 39 391v50Z"/>
+            <circle class="scene-line" cx="134" cy="410" r="8"/>
+            <path class="region" data-name="right fish body" d="M560 433q45-34 93 0-48 37-93 0Z"/>
+            <path class="region" data-name="right fish tail" d="m653 433 38-26v52Z"/>
+            <circle class="scene-line" cx="590" cy="426" r="8"/>
+            <path class="region" data-name="lotus left petal" d="M126 353q-43-19-52-57 46-1 65 52Z"/>
+            <path class="region" data-name="lotus middle petal" d="M141 353q-19-46 1-78 24 35 2 78Z"/>
+            <path class="region" data-name="lotus right petal" d="M156 352q18-52 61-55-9 41-52 57Z"/>
+            <path class="region" data-name="lotus leaf" d="M79 361q57-25 126 0-51 28-126 0Z"/>
+            <path class="region" data-name="right lotus left petal" d="M561 356q-31-16-38-49 38 1 50 46Z"/>
+            <path class="region" data-name="right lotus middle petal" d="M579 356q-20-45 0-73 21 31 3 73Z"/>
+            <path class="region" data-name="right lotus right petal" d="M592 353q18-43 54-46-8 34-42 49Z"/>
+            <path class="region" data-name="right lotus leaf" d="M531 365q54-23 105 0-45 23-105 0Z"/>
+            <path class="scene-line" d="M23 376q25-10 50 0m127 35q18-9 36 0m182 13q26-12 52 0m7 55q22-9 44 0m-270-12q22-10 44 0M405 244q8-9 17 0 8-9 17 0m-34 20q8-9 17 0"/>
+            <rect class="scene-frame" x="8" y="8" width="704" height="504" rx="12"/>
+          </svg>
+        </div><div class="studio-tools"><p class="tool-title">YOUR COLORS <span aria-hidden="true">✳</span></p><div class="palette" role="group" aria-label="Color palette"><button type="button" class="swatch selected" data-color="#ff7a3d" aria-label="Sunset orange" aria-pressed="true" style="--swatch:#ff7a3d"></button><button type="button" class="swatch" data-color="#ffc83d" aria-label="Sunshine yellow" aria-pressed="false" style="--swatch:#ffc83d"></button><button type="button" class="swatch" data-color="#e85d75" aria-label="Coral pink" aria-pressed="false" style="--swatch:#e85d75"></button><button type="button" class="swatch" data-color="#77b89a" aria-label="Leaf green" aria-pressed="false" style="--swatch:#77b89a"></button><button type="button" class="swatch" data-color="#0f7c80" aria-label="Nile teal" aria-pressed="false" style="--swatch:#0f7c80"></button><button type="button" class="swatch" data-color="#79b5df" aria-label="River blue" aria-pressed="false" style="--swatch:#79b5df"></button></div><div class="tool-actions"><button type="button" id="eraser" aria-pressed="false">⌫ <span>Eraser</span></button><button type="button" id="undo" disabled>↶ <span>Undo</span></button><button type="button" id="reset">⟲ <span>Start over</span></button></div><button type="button" class="save-button" id="save-art">Save my art ↓</button><p class="tool-hint">Tip: tap a big shape, like the river or sail, to begin.</p></div></div>
+      </div></div><div class="wrap studio-end"><span>Like this little scene?</span><a href="#books" data-filter-link="kids">Meet the kids’ books <span aria-hidden="true">→</span></a></div></section>
+
+    <section class="books-section wrap" id="books" aria-labelledby="books-title"><div class="books-head"><div><p class="eyebrow">THE BOOKSHELF</p><h2 id="books-title">Pick the one that <em>feels like you.</em></h2><p>Little adventures, quiet moments, and plenty of possibility on every page.</p></div><span class="catalog-count">11 books · 2 bundles</span></div>
+      <div class="filter-row" role="group" aria-label="Filter books"><button class="filter active" data-filter="all" aria-pressed="true">All books</button><button class="filter" data-filter="kids" aria-pressed="false">For kids</button><button class="filter" data-filter="adults" aria-pressed="false">For grown-ups</button></div>
+      <div class="catalog" id="catalog" aria-live="polite"></div>
+      <noscript><p>Browse the books: <a href="/books/little-nile-explorer/">Little Nile Explorer</a> · <a href="/books/forest-animal-friends/">Forest Animal Friends</a> · <a href="/books/amazing-wildlife-vol-2/">Amazing Wildlife Vol. 2</a> · <a href="/books/my-school-day-boy/">My School Day — Boy Edition</a> · <a href="/books/my-school-day-girl/">My School Day — Girl Edition</a> · <a href="/books/summer-seaside-boy/">Summer Seaside — Boy Edition</a> · <a href="/books/little-garden-neighbors/">Little Garden Neighbors</a> · <a href="/books/cute-wild-animals/">Cute Wild Animals</a> · <a href="/books/farm-and-friends/">Farm &amp; Friends</a> · <a href="/books/cute-cow/">Cute Cow Mini-Pack</a> · <a href="/books/nile-mandalas/">Nile Mandalas</a> · <a href="/books/wild-farm-bundle/">Wild + Farm Animals</a> · <a href="/books/complete-animal-collection/">Complete Animal Collection</a></p></noscript>
+      <p class="catalog-disclaimer">Covers shown are from the supplied books. Checkout opens on Gumroad. Interior previews are being confirmed before launch.</p>
+    </section>
+
+    <section class="how-section" aria-labelledby="how-title"><div class="wrap how-inner"><div><p class="eyebrow">SIMPLE AS ONE, TWO, THREE</p><h2 id="how-title">From screen to <em>coloring time.</em></h2></div><div class="how-steps"><div><b>01</b><h3>Choose your book</h3><p>Find a theme that makes you smile.</p></div><div><b>02</b><h3>Get your file</h3><p>Complete checkout on the product page.</p></div><div><b>03</b><h3>Print & color</h3><p>Bring your favorite pages to life.</p></div></div></div></section>
+    <section class="last-cta wrap"><div class="last-cta-art" aria-hidden="true">✳</div><div><p class="eyebrow">A LITTLE JOY FOR TODAY</p><h2>Ready to make<br><em>something colorful?</em></h2></div><a class="button button-primary" href="#books">Explore the bookshelf <span aria-hidden="true">→</span></a></section>
+  </main>
+  <footer><div class="wrap footer-inner"><div><strong>Nile Coloring Books</strong><p>Made for curious minds and colorful moments. A small shop from Cairo, Egypt — printable coloring books for kids and grown-ups.</p><p>Questions about an order? Email us: <a href="mailto:sherif.in.26@gmail.com">sherif.in.26@gmail.com</a></p></div><div><a href="#books" data-filter-link="kids">Kids</a><a href="#books" data-filter-link="adults">Adults</a><a href="#studio">Color a page</a></div><span>© <span id="year">2026</span> Nile Coloring Books</span></div></footer>
+
+  <dialog id="book-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close book details">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
