@@ -1,3 +1,4 @@
+// Nile Coloring Books — site v1.2.5 (Black Friday offer links).
 // The catalog is intentionally data-driven. Add new books to catalog.json.
 const catalogNode = document.querySelector("#catalog");
 const dialog = document.querySelector("#book-dialog");
@@ -35,7 +36,7 @@ function renderCatalog() {
     <div class="book-meta"><span class="book-category">${escapeHTML(book.kind || "Coloring book")}</span>
       <h3>${escapeHTML(book.title)}</h3><div class="book-bottom"><span class="book-price">${book.price == null ? "Price pending" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</span>
       <button type="button" data-book="${escapeHTML(book.slug)}">View book →</button></div>
-      <p class="book-code-hint">−30% with code ${BF_CODE}</p>
+      <p class="book-code-hint">−30% with code ${BF_CODE} · applies automatically</p>
     </div></article>`).join("");
   if (!visible.length) catalogNode.innerHTML = "<p>No books in this collection yet.</p>";
 }
@@ -55,7 +56,7 @@ function openBook(slug) {
   if (!book) return;
   const checkoutURL = safeCheckoutURL(book.purchaseUrl);
   const checkout = checkoutURL
-    ? `<a class="button button-primary" href="${escapeHTML(checkoutURL.href)}" target="_blank" rel="noopener noreferrer">Get the book · ${book.price == null ? "See price" : money(salePrice(book.price))} →</a><p class="bf-dialog-note">🖤 Black Friday: 30% off with code <code class="bf-code">${BF_CODE}</code> at checkout — ends Nov 30, 2026.</p><p class="book-actual-note">Checkout opens on ${escapeHTML(checkoutURL.hostname)}.</p>`
+    ? `<a class="button button-primary" href="${escapeHTML(checkoutURL.href)}" target="_blank" rel="noopener noreferrer">Get the book · ${book.price == null ? "See price" : money(salePrice(book.price))} →</a><p class="bf-dialog-note">🖤 Black Friday: 30% off applies automatically at checkout · Code <code class="bf-code">${BF_CODE}</code> — ends Nov 30, 2026.</p><p class="book-actual-note">Checkout opens on ${escapeHTML(checkoutURL.hostname)}.</p>`
     : '<p class="pending-link">Purchase link pending. This preview does not take payments.</p>';
   dialogContent.innerHTML = `<div class="dialog-grid"><div class="dialog-cover">${coverMarkup(book)}</div>
     <div class="dialog-copy"><span class="mini-label">${escapeHTML(book.kind || "Coloring book")}</span>
@@ -71,7 +72,12 @@ function safeCheckoutURL(value) {
   try {
     const url = new URL(value);
     const host = url.hostname.toLowerCase();
-    return url.protocol === "https:" && (host === "gumroad.com" || host.endsWith(".gumroad.com") || host === "creem.io" || host.endsWith(".creem.io")) ? url : null;
+    if (!(url.protocol === "https:" && (host === "gumroad.com" || host.endsWith(".gumroad.com") || host === "creem.io" || host.endsWith(".creem.io")))) return null;
+    // v1.2.5: Gumroad checkout shows no discount-code field, so the offer
+    // link must carry the code — set() is idempotent if catalog.json
+    // already has it.
+    if (host === "gumroad.com" || host.endsWith(".gumroad.com")) url.searchParams.set("offer_code", BF_CODE);
+    return url;
   } catch { return null; }
 }
 
