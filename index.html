@@ -15,7 +15,9 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <title>Nile Coloring Books | Printable Coloring Books for Kids & Mandalas for Adults</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="studio.css">
   <script src="app.js" defer></script>
+  <script src="studio.js" defer></script>
 <!-- Black Friday analytics (owner step): create a FREE Cloudflare Web Analytics account,
      add site nilecoloringbooks.com, then uncomment the script below and paste the real token
      in place of PUT-TOKEN-HERE. The token is public by design, not a secret.
@@ -71,45 +73,71 @@
       <a class="path-card path-adults" href="#books" data-filter-link="adults"><div class="path-icon" aria-hidden="true">❀</div><div><span class="mini-label">FOR A QUIETER MOMENT</span><h3>Take a creative pause</h3><p>Patterns and playful details for the moments you want to slow down and make something yours.</p><span class="path-link">Explore adult books <span aria-hidden="true">→</span></span></div><span class="path-doodle" aria-hidden="true">✺</span></a></div>
     </section>
 
-    <section class="studio-section" id="studio" aria-labelledby="studio-title"><div class="wrap studio-grid">
-      <div class="studio-intro"><p class="eyebrow eyebrow-light">THE LITTLE COLORING STUDIO</p><h2 id="studio-title">Go on.<br><em>Make it yours.</em></h2><p>Pick a color, then tap a shape. This original Nile scene is a tiny interactive taste of the fun—book pages are shown separately.</p><div class="studio-steps"><span><b>01</b> Pick a color</span><span><b>02</b> Tap the picture</span><span><b>03</b> Smile & repeat</span></div><div class="studio-caption"><span aria-hidden="true">↓</span> Your masterpiece starts here</div></div>
-      <div class="studio-workspace"><div class="drawing-top"><span><i aria-hidden="true"></i> COLORING PAPER</span><span id="progress-text" aria-live="polite">0 areas colored</span></div>
-      <div class="drawing-layout"><div class="drawing-paper">
-          <svg id="coloring-scene" viewBox="0 0 720 520" role="group" aria-label="Interactive Nile scene with a boat, sun, clouds, a pyramid, fish, and lotus flowers. Choose a color then tap a shape." xmlns="http://www.w3.org/2000/svg">
-            <rect class="region" data-name="sky" x="8" y="8" width="704" height="504" rx="12"/>
-            <path class="region" data-name="left hill" d="M8 277Q82 220 170 259Q238 210 315 264V338H8Z"/>
-            <path class="region" data-name="right hill" d="M474 263Q525 217 593 260Q652 223 712 268V339H474Z"/>
-            <path class="region" data-name="pyramid" d="M516 271L579 145 644 271Z"/>
-            <path class="scene-line" d="M579 145v126M547 208h64"/>
-            <path class="region" data-name="river" d="M8 331Q86 305 153 331T296 331T439 331T583 331T712 331V512H8Z"/>
-            <circle class="region" data-name="sun" cx="109" cy="105" r="42"/>
-            <path class="scene-line" d="M109 43V28M109 182v-14M48 105H32m153 0h-15M64 60 53 49m110 111-11-11M154 59l11-11M64 151l-11 11"/>
-            <path class="region" data-name="left cloud" d="M237 105q-8-20 12-31 18-11 33 5 11-28 39-25 26 1 29 29 21-2 26 17 5 22-18 24H254q-23 0-17-19Z"/>
-            <path class="region" data-name="right cloud" d="M476 87q-4-16 11-23 15-7 26 6 10-22 31-18 20 3 22 24 18-1 22 14 4 17-16 20h-77q-20 0-19-23Z"/>
-            <path class="region" data-name="boat hull" d="M207 335h255q-29 58-133 63-99-3-122-63Z"/>
-            <path class="region" data-name="left sail" d="M327 157v174H234q35-110 93-174Z"/>
-            <path class="region" data-name="right sail" d="M337 157v174h103q-39-111-103-174Z"/>
-            <path class="scene-line" d="M332 155v180M225 349h220"/>
-            <path class="region" data-name="boat flag" d="M332 157v-31l47 14-47 17Z"/>
-            <path class="region" data-name="left fish body" d="M74 416q41-38 88 0-46 40-88 0Z"/>
-            <path class="region" data-name="left fish tail" d="M75 416 39 391v50Z"/>
-            <circle class="scene-line" cx="134" cy="410" r="8"/>
-            <path class="region" data-name="right fish body" d="M560 433q45-34 93 0-48 37-93 0Z"/>
-            <path class="region" data-name="right fish tail" d="m653 433 38-26v52Z"/>
-            <circle class="scene-line" cx="590" cy="426" r="8"/>
-            <path class="region" data-name="lotus left petal" d="M126 353q-43-19-52-57 46-1 65 52Z"/>
-            <path class="region" data-name="lotus middle petal" d="M141 353q-19-46 1-78 24 35 2 78Z"/>
-            <path class="region" data-name="lotus right petal" d="M156 352q18-52 61-55-9 41-52 57Z"/>
-            <path class="region" data-name="lotus leaf" d="M79 361q57-25 126 0-51 28-126 0Z"/>
-            <path class="region" data-name="right lotus left petal" d="M561 356q-31-16-38-49 38 1 50 46Z"/>
-            <path class="region" data-name="right lotus middle petal" d="M579 356q-20-45 0-73 21 31 3 73Z"/>
-            <path class="region" data-name="right lotus right petal" d="M592 353q18-43 54-46-8 34-42 49Z"/>
-            <path class="region" data-name="right lotus leaf" d="M531 365q54-23 105 0-45 23-105 0Z"/>
-            <path class="scene-line" d="M23 376q25-10 50 0m127 35q18-9 36 0m182 13q26-12 52 0m7 55q22-9 44 0m-270-12q22-10 44 0M405 244q8-9 17 0 8-9 17 0m-34 20q8-9 17 0"/>
-            <rect class="scene-frame" x="8" y="8" width="704" height="504" rx="12"/>
-          </svg>
-        </div><div class="studio-tools"><p class="tool-title">YOUR COLORS <span aria-hidden="true">✳</span></p><div class="palette" role="group" aria-label="Color palette"><button type="button" class="swatch selected" data-color="#ff7a3d" aria-label="Sunset orange" aria-pressed="true" style="--swatch:#ff7a3d"></button><button type="button" class="swatch" data-color="#ffc83d" aria-label="Sunshine yellow" aria-pressed="false" style="--swatch:#ffc83d"></button><button type="button" class="swatch" data-color="#e85d75" aria-label="Coral pink" aria-pressed="false" style="--swatch:#e85d75"></button><button type="button" class="swatch" data-color="#77b89a" aria-label="Leaf green" aria-pressed="false" style="--swatch:#77b89a"></button><button type="button" class="swatch" data-color="#0f7c80" aria-label="Nile teal" aria-pressed="false" style="--swatch:#0f7c80"></button><button type="button" class="swatch" data-color="#79b5df" aria-label="River blue" aria-pressed="false" style="--swatch:#79b5df"></button></div><div class="tool-actions"><button type="button" id="eraser" aria-pressed="false">⌫ <span>Eraser</span></button><button type="button" id="undo" disabled>↶ <span>Undo</span></button><button type="button" id="reset">⟲ <span>Start over</span></button></div><button type="button" class="save-button" id="save-art">Save my art ↓</button><p class="tool-hint">Tip: tap a big shape, like the river or sail, to begin.</p></div></div>
-      </div></div><div class="wrap studio-end"><span>Like this little scene?</span><a href="#books" data-filter-link="kids">Meet the kids’ books <span aria-hidden="true">→</span></a></div></section>
+    <section class="studio-section studio-v2" id="studio" aria-labelledby="studio-title">
+  <div class="wrap studio-grid">
+    <div class="studio-intro">
+      <p class="eyebrow eyebrow-light">THE COLORING STUDIO · FREE TO TRY</p>
+      <h2 id="studio-title">A beach day<br><em>in your colors.</em></h2>
+      <p>Try this detailed family coloring page. Pick a color and a finish, then tap any open space. Save your artwork to your device when you're done.</p>
+    </div>
+    <div class="studio-workspace" id="ncb-studio">
+      <div class="drawing-top"><span><i aria-hidden="true"></i> YOUR COLORING PAGE</span><span id="ncb-count" aria-live="polite">Ready to color</span></div>
+      <div class="ncb-layout">
+        <div class="ncb-art-panel">
+          <div class="ncb-art" id="ncb-art">
+            <canvas id="ncb-paint" width="1087" height="1536" tabindex="0" role="img" aria-label="Beach family coloring page. Pick a color and tap an area. Keyboard: arrow keys move, Enter colors."></canvas>
+            <canvas id="ncb-feedback" width="1087" height="1536" aria-hidden="true"></canvas>
+            <img id="ncb-lines" src="assets/studio/beach-family-line-art.webp" width="1087" height="1536" alt="" decoding="async" loading="lazy">
+            <span id="ncb-cursor" aria-hidden="true"></span>
+            <span class="ncb-loading" id="ncb-loading" role="status">Preparing your coloring page…</span>
+          </div>
+          <div class="ncb-brand-preview" aria-label="Nile Coloring Books website and email"><strong>nilecoloringbooks.com</strong><span>sherif.in.26@gmail.com</span></div>
+          <p class="ncb-instruction" id="ncb-instruction">Tap an area to color it. Small details are easier when you zoom in.</p>
+        </div>
+        <div class="ncb-controls" aria-label="Coloring tools">
+          <h3>Choose a color</h3>
+          <div class="ncb-palette" id="ncb-palette" role="group" aria-label="Colors">
+            <button type="button" style="--c:#FF7A3D" data-color="#FF7A3D" aria-label="Sunset orange" aria-pressed="true"></button>
+            <button type="button" style="--c:#FFC83D" data-color="#FFC83D" aria-label="Sunshine yellow" aria-pressed="false"></button>
+            <button type="button" style="--c:#E85D75" data-color="#E85D75" aria-label="Coral pink" aria-pressed="false"></button>
+            <button type="button" style="--c:#0F7C80" data-color="#0F7C80" aria-label="Nile teal" aria-pressed="false"></button>
+            <button type="button" style="--c:#77B89A" data-color="#77B89A" aria-label="Leaf green" aria-pressed="false"></button>
+            <button type="button" style="--c:#79B5DF" data-color="#79B5DF" aria-label="River blue" aria-pressed="false"></button>
+            <button type="button" style="--c:#A77DD2" data-color="#A77DD2" aria-label="Lotus purple" aria-pressed="false"></button>
+            <button type="button" style="--c:#E9A7CD" data-color="#E9A7CD" aria-label="Blossom pink" aria-pressed="false"></button>
+            <button type="button" style="--c:#F5A860" data-color="#F5A860" aria-label="Peach" aria-pressed="false"></button>
+            <button type="button" style="--c:#478B5A" data-color="#478B5A" aria-label="Palm green" aria-pressed="false"></button>
+            <button type="button" style="--c:#395BA8" data-color="#395BA8" aria-label="Ocean blue" aria-pressed="false"></button>
+            <button type="button" style="--c:#C97656" data-color="#C97656" aria-label="Terracotta" aria-pressed="false"></button>
+            <button type="button" style="--c:#BCE576" data-color="#BCE576" aria-label="Lime" aria-pressed="false"></button>
+            <button type="button" style="--c:#FFE087" data-color="#FFE087" aria-label="Soft gold" aria-pressed="false"></button>
+            <button type="button" style="--c:#79D8D0" data-color="#79D8D0" aria-label="Lagoon" aria-pressed="false"></button>
+            <button type="button" style="--c:#C3B49A" data-color="#C3B49A" aria-label="Sand" aria-pressed="false"></button>
+            <button type="button" style="--c:#5C6575" data-color="#5C6575" aria-label="Slate" aria-pressed="false"></button>
+            <button type="button" style="--c:#F4C6AD" data-color="#F4C6AD" aria-label="Apricot" aria-pressed="false"></button>
+          </div>
+          <h3>Choose a finish</h3>
+          <div class="ncb-modes" id="ncb-modes" role="group" aria-label="Coloring finish">
+            <button type="button" data-mode="solid" aria-pressed="true"><span class="ncb-sample solid"></span> Solid</button>
+            <button type="button" data-mode="dots" aria-pressed="false"><span class="ncb-sample dots"></span> Dots</button>
+            <button type="button" data-mode="rings" aria-pressed="false"><span class="ncb-sample rings"></span> Circles</button>
+            <button type="button" data-mode="stripes" aria-pressed="false"><span class="ncb-sample stripes"></span> Stripes</button>
+          </div>
+          <div class="ncb-actions">
+            <button type="button" id="ncb-erase" aria-pressed="false">Eraser</button>
+            <button type="button" id="ncb-undo" disabled>Undo</button>
+            <button type="button" id="ncb-redo" disabled>Redo</button>
+            <button type="button" id="ncb-reset" disabled>Start over</button>
+          </div>
+          <button type="button" id="ncb-save" class="ncb-save">Save my art as PNG ↓</button>
+          <a class="ncb-bigpage" href="coloring-studio.html" target="_blank" rel="noopener">Color in a big page ↗</a>
+          <p class="ncb-privacy">No account needed. Your colors stay on this device; the downloaded picture includes our website and contact email.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap studio-end"><span>Want more pages like this?</span><a href="#books" data-filter-link="kids">Explore the books <span aria-hidden="true">→</span></a></div>
+</section>
 
     <section class="books-section wrap" id="books" aria-labelledby="books-title"><div class="books-head"><div><p class="eyebrow">THE BOOKSHELF</p><h2 id="books-title">Pick the one that <em>feels like you.</em></h2><p>Little adventures, quiet moments, and plenty of possibility on every page.</p>
       <p class="bf-books-note">🖤 <strong>Black Friday:</strong> 30% off every book, all November — 30% off applies automatically at checkout · Code <code class="bf-code">BLACKFRIDAY30</code>. Ends Monday, Nov 30.</p></div><span class="catalog-count">11 books · 2 bundles</span></div>
