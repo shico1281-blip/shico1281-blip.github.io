@@ -10,6 +10,14 @@ const escapeHTML = value => String(value ?? "").replace(/[&<>"']/g, char => ({
 })[char]);
 const cardColor = value => /^#[0-9a-fA-F]{6}$/.test(value || "") ? value : "#edf1e7";
 
+
+// Black Friday — whole November 2026 (Nov 8-30). Sale prices are computed from
+// catalog.json, never stored: original prices stay untouched.
+const BF_CODE = "BLACKFRIDAY30";
+const BF_END = new Date("2026-11-30T23:59:59+02:00");
+const salePrice = price => price == null ? null : (Math.round(Number(price) * 70) / 100).toFixed(2);
+const money = value => "$" + Number(value).toFixed(2);
+
 function coverMarkup(book) {
   if (book.image) {
     return `<img src="${escapeHTML(book.image)}" alt="${escapeHTML(book.title)} cover" width="${book.width || 400}" height="${book.height || 566}" loading="lazy" decoding="async">`;
@@ -22,11 +30,12 @@ function renderCatalog() {
   catalogNode.innerHTML = visible.map(book => `<article class="book-card">
     <button class="book-image-button" type="button" data-book="${escapeHTML(book.slug)}" aria-label="View ${escapeHTML(book.title)}">
       <div class="book-cover" style="--card-bg:${cardColor(book.cardColor)}">
-        ${coverMarkup(book)}<span class="book-badge">${escapeHTML(book.label || (book.category === "kids" ? "For kids" : "For adults"))}</span>
+        ${coverMarkup(book)}<span class="book-badge">${escapeHTML(book.label || (book.category === "kids" ? "For kids" : "For adults"))}</span><span class="sale-badge">−30% · BLACK FRIDAY</span>
       </div></button>
     <div class="book-meta"><span class="book-category">${escapeHTML(book.kind || "Coloring book")}</span>
-      <h3>${escapeHTML(book.title)}</h3><div class="book-bottom"><span>${book.price == null ? "Price pending" : "$" + Number(book.price).toFixed(2)}</span>
+      <h3>${escapeHTML(book.title)}</h3><div class="book-bottom"><span class="book-price">${book.price == null ? "Price pending" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</span>
       <button type="button" data-book="${escapeHTML(book.slug)}">View book →</button></div>
+      <p class="book-code-hint">−30% with code ${BF_CODE}</p>
     </div></article>`).join("");
   if (!visible.length) catalogNode.innerHTML = "<p>No books in this collection yet.</p>";
 }
@@ -46,12 +55,12 @@ function openBook(slug) {
   if (!book) return;
   const checkoutURL = safeCheckoutURL(book.purchaseUrl);
   const checkout = checkoutURL
-    ? `<a class="button button-primary" href="${escapeHTML(checkoutURL.href)}" target="_blank" rel="noopener noreferrer">Get the book · ${book.price == null ? "See price" : "$" + Number(book.price).toFixed(2)} →</a><p class="book-actual-note">Checkout opens on ${escapeHTML(checkoutURL.hostname)}.</p>`
+    ? `<a class="button button-primary" href="${escapeHTML(checkoutURL.href)}" target="_blank" rel="noopener noreferrer">Get the book · ${book.price == null ? "See price" : money(salePrice(book.price))} →</a><p class="bf-dialog-note">🖤 Black Friday: 30% off with code <code class="bf-code">${BF_CODE}</code> at checkout — ends Nov 30, 2026.</p><p class="book-actual-note">Checkout opens on ${escapeHTML(checkoutURL.hostname)}.</p>`
     : '<p class="pending-link">Purchase link pending. This preview does not take payments.</p>';
   dialogContent.innerHTML = `<div class="dialog-grid"><div class="dialog-cover">${coverMarkup(book)}</div>
     <div class="dialog-copy"><span class="mini-label">${escapeHTML(book.kind || "Coloring book")}</span>
       <h2 id="dialog-title">${escapeHTML(book.title)}</h2><p>${escapeHTML(book.description || "A printable coloring book to make your own.")}</p>
-      <p class="dialog-price">${book.price == null ? "Price to confirm" : "$" + Number(book.price).toFixed(2)}</p>
+      <p class="dialog-price">${book.price == null ? "Price to confirm" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</p>
       ${checkout}<p><a href="/books/${encodeURIComponent(book.slug)}/">View full book page →</a></p><p class="book-actual-note">Interior previews are awaiting the actual book files.</p>
     </div></div>`;
   dialog.showModal();
@@ -196,4 +205,39 @@ updateProgress();
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) { intro.remove(); return; }
   const timer = setTimeout(hide, 1400);
   intro.addEventListener("click", () => { clearTimeout(timer); hide(); });
+})();
+
+// Black Friday countdown: days left until Nov 30, 2026 (Cairo time).
+(function () {
+  var el = document.getElementById("bf-days");
+  if (!el) return;
+  var now = new Date();
+  var diff = BF_END - now;
+  var days = Math.ceil(diff / 86400000);
+  el.textContent = diff <= 0 ? "· Sale ended Nov 30" : days > 1 ? "· " + days + " days left" : days === 1 ? "· Last day!" : "· Ends tonight!";
+})();
+
+// Visitor counter (CountAPI alternative, no signup). First visit from a browser
+// hits /hit/ (counts), later visits use /get/ (read-only) so reloads don't inflate
+// the number. Any failure leaves a quiet "—" and the site works normally.
+(function () {
+  var el = document.getElementById("visitor-count");
+  if (!el) return;
+  var KEY = "nilecoloringbooks-com-visits";
+  var seen = null;
+  try { seen = localStorage.getItem("nbc-counted"); } catch (e) {}
+  var url = seen
+    ? "https://countapi.mileshilliard.com/api/v1/get/" + KEY
+    : "https://countapi.mileshilliard.com/api/v1/hit/" + KEY;
+  var done = false;
+  var timer = setTimeout(function () { if (!done) el.textContent = "—"; }, 6000);
+  fetch(url)
+    .then(function (r) { return r.json(); })
+    .then(function (d) {
+      if (!d || !isFinite(Number(d.value))) throw new Error("bad counter value");
+      done = true; clearTimeout(timer);
+      el.textContent = Number(d.value).toLocaleString("en-US");
+      try { localStorage.setItem("nbc-counted", "1"); } catch (e) {}
+    })
+    .catch(function () { done = true; clearTimeout(timer); el.textContent = "—"; });
 })();

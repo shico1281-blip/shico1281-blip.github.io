@@ -24,3 +24,42 @@
 #intro-skip:hover{transform:translateY(-2px)}
 @media (prefers-reduced-motion: reduce){#intro{transition:none}.intro-dots span{animation:none}}
 .footer-note{font-size:.72rem;color:#c0cad9}
+
+/* Black Friday — whole November 2026 (v1.2.4). Red sale theme. */
+:root{--bf-red:#c8102e;--bf-red-dark:#8f0b20;--bf-red-bright:#e02424}
+.bf-banner{background:linear-gradient(90deg,var(--bf-red-dark),var(--bf-red) 45%,var(--bf-red-bright));color:#fff;border-bottom:3px solid var(--ink)}
+.bf-banner-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;flex-wrap:wrap}
+.bf-banner p{margin:0;font-size:.95rem;line-height:1.45}
+.bf-banner strong{letter-spacing:.02em}
+.bf-banner-sep{opacity:.7;margin:0 2px}
+.bf-code{font-family:ui-monospace,Menlo,Consolas,monospace;background:#fff;color:var(--bf-red-dark);border:1.5px dashed var(--bf-red);border-radius:6px;padding:1px 7px;font-weight:900;white-space:nowrap}
+.bf-banner .bf-code{background:#fff}
+.bf-days{font-weight:900;white-space:nowrap}
+.bf-banner-cta{background:#fff;color:var(--bf-red-dark);border:2px solid var(--ink);border-radius:100px;padding:9px 18px;font-weight:900;font-size:.85rem;box-shadow:3px 3px 0 var(--ink);white-space:nowrap}
+.bf-banner-cta:hover{transform:translateY(-2px)}
+.bf-books-note{background:#fdecec;border:2px solid var(--bf-red);border-radius:12px;padding:12px 16px;font-size:.95rem;color:var(--ink);margin:18px 0 0}
+.bf-books-note .bf-code{background:#fff}
+.sale-badge{position:absolute;top:13px;right:12px;background:var(--bf-red);color:#fff;border:1.5px solid var(--ink);border-radius:100px;padding:5px 10px;font-size:.58rem;font-weight:900;letter-spacing:.03em;box-shadow:2px 2px 0 var(--ink);z-index:2}
+.book-price .sale-price{color:var(--bf-red);font-size:1.05rem}
+.was-price{color:var(--muted);font-weight:700;font-size:.8rem}
+.book-code-hint{font-size:.68rem;color:var(--bf-red);font-weight:900;margin:8px 2px 0}
+.bf-dialog-note{background:#fdecec;border:1.5px solid var(--bf-red);border-radius:10px;padding:10px 12px;font-size:.82rem;color:var(--ink);margin-top:12px}
+.dialog-price .sale-price{color:var(--bf-red)}
+.visitor-count{color:#c0cad9;font-size:.8rem;font-weight:700}
+.visitor-count span{color:#fff}
+.guestbook-section{padding:90px 0 100px}
+.guestbook-section .section-heading{text-align:center;margin-bottom:34px}
+.guestbook-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.guestbook-form{background:#fff;border:2px solid var(--ink);border-radius:20px;padding:26px;display:grid;gap:14px;box-shadow:6px 8px 0 var(--ink)}
+.guestbook-form label{font-weight:900;font-size:.82rem;display:grid;gap:7px}
+.guestbook-form input[type=text],.guestbook-form textarea{border:2px solid var(--ink);border-radius:12px;padding:11px 13px;font:inherit;font-weight:400;width:100%}
+.guestbook-form textarea{min-height:96px;resize:vertical}
+.guestbook-form button[type=submit]{border:2px solid var(--ink);border-radius:100px;background:var(--yellow);padding:13px 20px;font-weight:900;box-shadow:3px 3px 0 var(--ink)}
+.guestbook-form button[type=submit]:hover{transform:translateY(-2px)}
+.guestbook-rules{font-size:.72rem;color:var(--muted);margin:0}
+.guestbook-entries h3{font-size:1.4rem;margin-bottom:16px}
+.guestbook-entries blockquote{background:#fff;border:2px solid var(--ink);border-left:8px solid var(--yellow);border-radius:14px;padding:18px 20px;margin:0 0 14px}
+.guestbook-entries blockquote p{margin:0 0 8px}
+.guestbook-entries blockquote footer{font-size:.8rem;font-weight:900;color:var(--teal)}
+.guestbook-empty{color:var(--muted);font-size:.9rem}
+@media(max-width:740px){.bf-banner-inner{justify-content:center;text-align:center}.bf-banner p{font-size:.85rem}.guestbook-grid{grid-template-columns:1fr}.sale-badge{font-size:.52rem;top:8px;right:8px}}

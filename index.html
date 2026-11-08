@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#fff9f0">
   
-  <meta name="description" content="Printable coloring books for kids ages 4-7 and mandala coloring books for adults. Instant-download PDFs, A4 and US Letter. Try the free interactive coloring scene.">
+  <meta name="description" content="Black Friday: 30% off all coloring books all November with code BLACKFRIDAY30. Printable coloring books for kids ages 4-7 and mandala coloring books for adults. Instant-download PDFs, A4 and US Letter.">
 <link rel="canonical" href="https://nilecoloringbooks.com/">
 <meta property="og:title" content="Nile Coloring Books | Printable Coloring Books for Kids & Mandalas for Adults">
-<meta property="og:description" content="Printable coloring books for kids ages 4-7 and mandala coloring books for adults. Instant-download PDFs, A4 and US Letter.">
+<meta property="og:description" content="Black Friday: 30% off all coloring books all November with code BLACKFRIDAY30. Printable coloring books for kids ages 4-7 and mandalas for adults.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://nilecoloringbooks.com/">
 <meta property="og:image" content="https://nilecoloringbooks.com/assets/covers/little-nile-explorer.webp">
@@ -16,6 +16,12 @@
   <title>Nile Coloring Books | Printable Coloring Books for Kids & Mandalas for Adults</title>
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
+<!-- Black Friday analytics (owner step): create a FREE Cloudflare Web Analytics account,
+     add site nilecoloringbooks.com, then uncomment the script below and paste the real token
+     in place of PUT-TOKEN-HERE. The token is public by design, not a secret.
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+  data-cf-beacon='{"token": "PUT-TOKEN-HERE"}'></script>
+-->
 </head>
 <body>
   <div id="intro" role="dialog" aria-label="Welcome to Nile Coloring Books"><div class="intro-inner"><div class="intro-dots" aria-hidden="true"><span style="--d:#ff7a3d"></span><span style="--d:#ffc83d"></span><span style="--d:#e85d75"></span><span style="--d:#77b89a"></span><span style="--d:#0f7c80"></span><span style="--d:#79b5df"></span></div><p class="intro-title">Nile <em>Coloring Books</em></p><p class="intro-sub">A little color goes a long way.</p><button type="button" id="intro-skip">Skip intro →</button></div></div>
@@ -31,6 +37,13 @@
       <a class="header-cta" href="#books">Explore books <span aria-hidden="true">→</span></a>
     </div>
   </header>
+
+  <div class="bf-banner" role="region" aria-label="Black Friday sale">
+    <div class="wrap bf-banner-inner">
+      <p><strong>🖤 BLACK FRIDAY — 30% OFF EVERYTHING</strong> <span class="bf-banner-sep">·</span> All November, Nov 8–30 <span class="bf-banner-sep">·</span> Use code <code class="bf-code">BLACKFRIDAY30</code> at checkout on Gumroad <span class="bf-days" id="bf-days">· Ends Nov 30</span></p>
+      <a class="bf-banner-cta" href="#books">Shop the sale →</a>
+    </div>
+  </div>
 
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-title">
@@ -98,18 +111,41 @@
         </div><div class="studio-tools"><p class="tool-title">YOUR COLORS <span aria-hidden="true">✳</span></p><div class="palette" role="group" aria-label="Color palette"><button type="button" class="swatch selected" data-color="#ff7a3d" aria-label="Sunset orange" aria-pressed="true" style="--swatch:#ff7a3d"></button><button type="button" class="swatch" data-color="#ffc83d" aria-label="Sunshine yellow" aria-pressed="false" style="--swatch:#ffc83d"></button><button type="button" class="swatch" data-color="#e85d75" aria-label="Coral pink" aria-pressed="false" style="--swatch:#e85d75"></button><button type="button" class="swatch" data-color="#77b89a" aria-label="Leaf green" aria-pressed="false" style="--swatch:#77b89a"></button><button type="button" class="swatch" data-color="#0f7c80" aria-label="Nile teal" aria-pressed="false" style="--swatch:#0f7c80"></button><button type="button" class="swatch" data-color="#79b5df" aria-label="River blue" aria-pressed="false" style="--swatch:#79b5df"></button></div><div class="tool-actions"><button type="button" id="eraser" aria-pressed="false">⌫ <span>Eraser</span></button><button type="button" id="undo" disabled>↶ <span>Undo</span></button><button type="button" id="reset">⟲ <span>Start over</span></button></div><button type="button" class="save-button" id="save-art">Save my art ↓</button><p class="tool-hint">Tip: tap a big shape, like the river or sail, to begin.</p></div></div>
       </div></div><div class="wrap studio-end"><span>Like this little scene?</span><a href="#books" data-filter-link="kids">Meet the kids’ books <span aria-hidden="true">→</span></a></div></section>
 
-    <section class="books-section wrap" id="books" aria-labelledby="books-title"><div class="books-head"><div><p class="eyebrow">THE BOOKSHELF</p><h2 id="books-title">Pick the one that <em>feels like you.</em></h2><p>Little adventures, quiet moments, and plenty of possibility on every page.</p></div><span class="catalog-count">11 books · 2 bundles</span></div>
+    <section class="books-section wrap" id="books" aria-labelledby="books-title"><div class="books-head"><div><p class="eyebrow">THE BOOKSHELF</p><h2 id="books-title">Pick the one that <em>feels like you.</em></h2><p>Little adventures, quiet moments, and plenty of possibility on every page.</p>
+      <p class="bf-books-note">🖤 <strong>Black Friday:</strong> 30% off every book, all November — use code <code class="bf-code">BLACKFRIDAY30</code> at checkout. Ends Monday, Nov 30.</p></div><span class="catalog-count">11 books · 2 bundles</span></div>
       <div class="filter-row" role="group" aria-label="Filter books"><button class="filter active" data-filter="all" aria-pressed="true">All books</button><button class="filter" data-filter="kids" aria-pressed="false">For kids</button><button class="filter" data-filter="adults" aria-pressed="false">For grown-ups</button></div>
       <div class="catalog" id="catalog" aria-live="polite"></div>
       <noscript><p>Browse the books: <a href="/books/little-nile-explorer/">Little Nile Explorer</a> · <a href="/books/forest-animal-friends/">Forest Animal Friends</a> · <a href="/books/amazing-wildlife-vol-2/">Amazing Wildlife Vol. 2</a> · <a href="/books/my-school-day-boy/">My School Day — Boy Edition</a> · <a href="/books/my-school-day-girl/">My School Day — Girl Edition</a> · <a href="/books/summer-seaside-boy/">Summer Seaside — Boy Edition</a> · <a href="/books/little-garden-neighbors/">Little Garden Neighbors</a> · <a href="/books/cute-wild-animals/">Cute Wild Animals</a> · <a href="/books/farm-and-friends/">Farm &amp; Friends</a> · <a href="/books/cute-cow/">Cute Cow Mini-Pack</a> · <a href="/books/nile-mandalas/">Nile Mandalas</a> · <a href="/books/wild-farm-bundle/">Wild + Farm Animals</a> · <a href="/books/complete-animal-collection/">Complete Animal Collection</a></p></noscript>
       <p class="catalog-disclaimer">Covers shown are from the supplied books. Checkout opens on Gumroad. Interior previews are being confirmed before launch.</p>
     </section>
 
+    <section class="guestbook-section wrap" id="guestbook" aria-labelledby="guestbook-title"><div class="section-heading"><p class="eyebrow">SAY HELLO</p><h2 id="guestbook-title">Visitor Guestbook 💛</h2><p>Colored one of our books? Leave a little hello! Every message is read before it appears here.</p></div>
+      <div class="guestbook-grid">
+        <form class="guestbook-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="PUT-WEB3FORMS-KEY-HERE">
+          <input type="hidden" name="subject" value="New guestbook message — Nile Coloring Books">
+          <input type="hidden" name="redirect" value="https://nilecoloringbooks.com/#guestbook">
+          <input type="checkbox" name="botcheck" style="display:none">
+          <label>Your first name <input type="text" name="name" maxlength="30" required placeholder="e.g. Layla"></label>
+          <label>Your message <textarea name="message" maxlength="200" required placeholder="What did you color today?"></textarea></label>
+          <div class="h-captcha" data-captcha="true"></div>
+          <button type="submit">Sign the guestbook ✏️</button>
+          <p class="guestbook-rules">We publish your first name and message only — never emails, ages, photos or links. Messages are reviewed by Sherif before they appear.</p>
+        </form>
+        <div class="guestbook-entries" id="guestbook-entries">
+          <h3>Messages from our coloring corner</h3>
+          <blockquote><p>Welcome to our little coloring corner! If you colored one of our books, tell us which one was your favorite — we read every message. 🎨</p><footer>— Sherif, Nile Coloring Books</footer></blockquote>
+          <p class="guestbook-empty">Be the first visitor to sign! ✏️</p>
+        </div>
+      </div>
+    </section>
+
     <section class="how-section" aria-labelledby="how-title"><div class="wrap how-inner"><div><p class="eyebrow">SIMPLE AS ONE, TWO, THREE</p><h2 id="how-title">From screen to <em>coloring time.</em></h2></div><div class="how-steps"><div><b>01</b><h3>Choose your book</h3><p>Find a theme that makes you smile.</p></div><div><b>02</b><h3>Get your file</h3><p>Complete checkout on the product page.</p></div><div><b>03</b><h3>Print & color</h3><p>Bring your favorite pages to life.</p></div></div></div></section>
     <section class="last-cta wrap"><div class="last-cta-art" aria-hidden="true">✳</div><div><p class="eyebrow">A LITTLE JOY FOR TODAY</p><h2>Ready to make<br><em>something colorful?</em></h2></div><a class="button button-primary" href="#books">Explore the bookshelf <span aria-hidden="true">→</span></a></section>
   </main>
-  <footer><div class="wrap footer-inner"><div><strong>Nile Coloring Books</strong><p>Made for curious minds and colorful moments. A small shop from Cairo, Egypt — printable coloring books for kids and grown-ups.</p><p>Questions about an order? Email us: <a href="mailto:sherif.in.26@gmail.com">sherif.in.26@gmail.com</a></p></div><div><a href="#books" data-filter-link="kids">Kids</a><a href="#books" data-filter-link="adults">Adults</a><a href="#studio">Color a page</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div><span>© <span id="year">2026</span> Nile Coloring Books</span></div></footer>
+  <footer><div class="wrap footer-inner"><div><strong>Nile Coloring Books</strong><p>Made for curious minds and colorful moments. A small shop from Cairo, Egypt — printable coloring books for kids and grown-ups.</p><p>Questions about an order? Email us: <a href="mailto:sherif.in.26@gmail.com">sherif.in.26@gmail.com</a></p><p class="visitor-count">👀 Visitors: <span id="visitor-count">…</span></p></div><div><a href="#books" data-filter-link="kids">Kids</a><a href="#books" data-filter-link="adults">Adults</a><a href="#studio">Color a page</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div><span>© <span id="year">2026</span> Nile Coloring Books</span></div></footer>
 
   <dialog id="book-dialog" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close book details">×</button><div id="dialog-content"></div></dialog>
+  <script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>

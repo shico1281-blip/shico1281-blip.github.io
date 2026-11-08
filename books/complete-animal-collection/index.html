@@ -14,12 +14,35 @@
 <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 35c5-5 8-5 13 0s8 5 13 0 8-5 11-3"/><path d="M21 28c-4-9-2-17 3-21 6 6 7 13 3 21M23 29c-8-6-14-6-18-3 5 7 11 9 18 7m2-4c8-6 14-6 18-3-5 7-11 9-18 7"/></svg>
 <span>Nile<span class="brand-small">COLORING BOOKS</span></span></a><nav aria-label="Main navigation">
 <a href="/#books">Books</a><a href="/#studio">Color a page</a></nav><a class="header-cta" href="/#books">Explore books →</a></div></header>
+<div class="bf-banner" role="region" aria-label="Black Friday sale"><div class="wrap bf-banner-inner"><p><strong>🖤 BLACK FRIDAY — 30% OFF EVERYTHING</strong> · All November, Nov 8–30 · Use code <code class="bf-code">BLACKFRIDAY30</code> at checkout on Gumroad · Ends Nov 30</p><a class="bf-banner-cta" href="/#books">Shop the sale →</a></div></div>
 <main id="main"><div class="wrap product-breadcrumb"><a href="/">Home</a> / <a href="/#books">Books</a> / Complete Animal Collection</div>
 <section class="wrap product-grid"><div class="product-cover"><img src="/assets/covers/full-set.webp" alt="Complete Animal Collection printable coloring book cover" width="430" height="608"></div>
 <div class="product-info"><p class="eyebrow">Bundle · kids</p>
-<h1>Complete Animal Collection</h1><p class="product-description">The full animal coloring collection in one set — a printable coloring pages bundle. A4 PDF.</p><p class="product-price">$4.49</p>
-<a class="button button-primary" href="https://sherif261.gumroad.com/l/mzzjupn" target="_blank" rel="noopener noreferrer">Get the book · $4.49 →</a><p class="product-note">Digital coloring book. Confirm the file contents and print format on the checkout page before purchasing.</p>
+<h1>Complete Animal Collection</h1><p class="product-description">The full animal coloring collection in one set — a printable coloring pages bundle. A4 PDF.</p><p class="product-price"><span class="sale-price">$3.14</span> <s class="was-price">$4.49</s></p><p class="bf-books-note">🖤 Black Friday: 30% off all November with code <code class="bf-code">BLACKFRIDAY30</code> at checkout — ends Nov 30.</p>
+<a class="button button-primary" href="https://sherif261.gumroad.com/l/mzzjupn" target="_blank" rel="noopener noreferrer">Get the book · $3.14 →</a><p class="product-note">Digital coloring book. Confirm the file contents and print format on the checkout page before purchasing.</p>
 <p class="product-note">Interior page previews will be added when the actual book pages are provided.</p></div></section>
 <section class="wrap related-section"><p class="eyebrow">KEEP EXPLORING</p><h2>Another page to discover.</h2><div class="related-grid"><a href="/books/little-nile-explorer/" class="related-card"><img src="/assets/covers/little-nile-explorer.webp" alt="" loading="lazy" width="325" height="650"><b>Little Nile Explorer</b></a><a href="/books/forest-animal-friends/" class="related-card"><img src="/assets/covers/forest-animal-friends.webp" alt="" loading="lazy" width="430" height="608"><b>Forest Animal Friends</b></a><a href="/books/amazing-wildlife-vol-2/" class="related-card"><img src="/assets/covers/amazing-wildlife-vol2.webp" alt="" loading="lazy" width="430" height="608"><b>Amazing Wildlife Vol. 2</b></a></div></section></main>
 <footer><div class="wrap footer-inner"><div><strong>Nile Coloring Books</strong><p>Made for curious minds and colorful moments. A small shop from Cairo, Egypt.</p><p>Questions about an order? Email us: <a href="mailto:sherif.in.26@gmail.com">sherif.in.26@gmail.com</a></p></div>
-<div><a href="/#books">Books</a><a href="/#studio">Color a page</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div><span>© 2026 Nile Coloring Books</span></div></footer></body></html>
+<div><a href="/#books">Books</a><a href="/#studio">Color a page</a><a href="/privacy/">Privacy Policy</a><a href="/terms/">Terms of Service</a></div><p class="visitor-count">👀 Visitors: <span id="visitor-count">…</span></p><span>© 2026 Nile Coloring Books</span></div></footer>
+<script>
+// Visitor counter (CountAPI alternative) — same key as the homepage; localStorage
+// flag means one browser counts once, reloads and other pages only read.
+(function () {
+  var el = document.getElementById("visitor-count");
+  if (!el) return;
+  var KEY = "nilecoloringbooks-com-visits";
+  var seen = null;
+  try { seen = localStorage.getItem("nbc-counted"); } catch (e) {}
+  var url = seen ? "https://countapi.mileshilliard.com/api/v1/get/" + KEY
+                 : "https://countapi.mileshilliard.com/api/v1/hit/" + KEY;
+  var done = false;
+  var timer = setTimeout(function () { if (!done) el.textContent = "—"; }, 6000);
+  fetch(url).then(function (r) { return r.json(); }).then(function (d) {
+    if (!d || !isFinite(Number(d.value))) throw new Error("bad counter value");
+    done = true; clearTimeout(timer);
+    el.textContent = Number(d.value).toLocaleString("en-US");
+    try { localStorage.setItem("nbc-counted", "1"); } catch (e) {}
+  }).catch(function () { done = true; clearTimeout(timer); el.textContent = "—"; });
+})();
+</script>
+</body></html>
