@@ -16,8 +16,10 @@
   <title>Nile Coloring Books | Printable Coloring Books for Kids & Mandalas for Adults</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="studio.css">
+  <link rel="stylesheet" href="studio-soccer.css">
   <script src="app.js" defer></script>
   <script src="studio.js" defer></script>
+  <script src="studio-soccer.js" defer></script>
 <!-- Black Friday analytics (owner step): create a FREE Cloudflare Web Analytics account,
      add site nilecoloringbooks.com, then uncomment the script below and paste the real token
      in place of PUT-TOKEN-HERE. The token is public by design, not a secret.
@@ -26,8 +28,6 @@
 -->
 </head>
 <body>
-  <div id="intro" role="dialog" aria-label="Welcome to Nile Coloring Books"><div class="intro-inner"><div class="intro-dots" aria-hidden="true"><span style="--d:#ff7a3d"></span><span style="--d:#ffc83d"></span><span style="--d:#e85d75"></span><span style="--d:#77b89a"></span><span style="--d:#0f7c80"></span><span style="--d:#79b5df"></span></div><p class="intro-title">Nile <em>Coloring Books</em></p><p class="intro-sub">A little color goes a long way.</p><button type="button" id="intro-skip">Skip intro →</button></div></div>
-  <noscript><style>#intro{display:none!important}</style></noscript>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
@@ -42,7 +42,7 @@
 
   <div class="bf-banner" role="region" aria-label="Black Friday sale">
     <div class="wrap bf-banner-inner">
-      <p><strong>🖤 BLACK FRIDAY — 30% OFF EVERYTHING</strong> <span class="bf-banner-sep">·</span> All November, Nov 8–30 <span class="bf-banner-sep">·</span> Tap Shop the sale — 30% off applies automatically at checkout · Code <code class="bf-code">BLACKFRIDAY30</code> <span class="bf-days" id="bf-days">· Ends Nov 30</span></p>
+      <p><strong>🖤 BLACK FRIDAY — 30% OFF EVERYTHING</strong> <span class="bf-banner-sep">·</span> Nov 8–30 · code <code class="bf-code">BLACKFRIDAY30</code> <span class="bf-days" id="bf-days">· Ends Nov 30</span></p>
       <a class="bf-banner-cta" href="#books">Shop the sale →</a>
     </div>
   </div>
@@ -73,6 +73,101 @@
       <a class="path-card path-adults" href="#books" data-filter-link="adults"><div class="path-icon" aria-hidden="true">❀</div><div><span class="mini-label">FOR A QUIETER MOMENT</span><h3>Take a creative pause</h3><p>Patterns and playful details for the moments you want to slow down and make something yours.</p><span class="path-link">Explore adult books <span aria-hidden="true">→</span></span></div><span class="path-doodle" aria-hidden="true">✺</span></a></div>
     </section>
 
+    <section class="books-section wrap" id="books" aria-labelledby="books-title"><div class="books-head"><div><p class="eyebrow">THE BOOKSHELF</p><h2 id="books-title">Pick the one that <em>feels like you.</em></h2><p>Little adventures, quiet moments, and plenty of possibility on every page.</p>
+</div><span class="catalog-count">11 books · 2 bundles</span></div>
+      <div class="filter-row" role="group" aria-label="Filter books"><button class="filter active" data-filter="all" aria-pressed="true">All books</button><button class="filter" data-filter="kids" aria-pressed="false">For kids</button><button class="filter" data-filter="adults" aria-pressed="false">For grown-ups</button></div>
+      <div class="catalog-root" id="catalog" aria-live="polite"></div>
+      <noscript><p>Browse the books: <a href="/books/little-nile-explorer/">Little Nile Explorer</a> · <a href="/books/forest-animal-friends/">Forest Animal Friends</a> · <a href="/books/amazing-wildlife-vol-2/">Amazing Wildlife Vol. 2</a> · <a href="/books/my-school-day-boy/">My School Day — Boy Edition</a> · <a href="/books/my-school-day-girl/">My School Day — Girl Edition</a> · <a href="/books/summer-seaside-boy/">Summer Seaside — Boy Edition</a> · <a href="/books/little-garden-neighbors/">Little Garden Neighbors</a> · <a href="/books/cute-wild-animals/">Cute Wild Animals</a> · <a href="/books/farm-and-friends/">Farm &amp; Friends</a> · <a href="/books/cute-cow/">Cute Cow Mini-Pack</a> · <a href="/books/nile-mandalas/">Nile Mandalas</a> · <a href="/books/wild-farm-bundle/">Wild + Farm Animals</a> · <a href="/books/complete-animal-collection/">Complete Animal Collection</a></p></noscript>
+      <p class="catalog-disclaimer">Covers shown are from the supplied books. Checkout opens on Gumroad. Interior previews are shown on the featured books' pages.</p>
+    </section>
+
+    <section class="studio-section studio-v2" id="from-the-books" aria-labelledby="soccer-title">
+  <div class="wrap studio-grid">
+    <div class="studio-intro">
+      <p class="eyebrow eyebrow-light">COLOR THE PAGE, THEN DISCOVER THE BOOK</p>
+      <h2 id="soccer-title">A real page<br><em>from a real book.</em></h2>
+      <p>This soccer page is Page 18 from <b>My School Day — Boy Edition</b>. Color it right here, save it, then see the book it came from.</p>
+      <p><button type="button" id="soc-colored-toggle" class="soc-toggle" aria-pressed="false">👀 See it after coloring</button></p>
+    </div>
+    <div class="studio-workspace" id="soc-studio">
+      <div class="drawing-top"><span><i aria-hidden="true"></i> YOUR COLORING PAGE · PAGE 18 FROM MY SCHOOL DAY — BOY</span><span id="soc-count" aria-live="polite">Ready to color</span></div>
+      <div class="soc-layout">
+        <div class="soc-art-panel">
+          <div class="soc-art" id="soc-art">
+            <canvas id="soc-paint" width="1087" height="1536" tabindex="0" role="img" aria-label="Soccer boy coloring page, page 18 from My School Day — Boy Edition. Pick a color and tap an area. Keyboard: arrow keys move, Enter colors."></canvas>
+            <canvas id="soc-feedback" width="1087" height="1536" aria-hidden="true"></canvas>
+            <img id="soc-lines" src="assets/studio/soccer-line-art.webp" width="1087" height="1536" alt="" decoding="async" loading="lazy">
+            <span id="soc-cursor" aria-hidden="true"></span>
+            <span class="soc-loading" id="soc-loading" role="status">Preparing your coloring page…</span>
+          </div>
+          <div class="soc-brand-preview" aria-label="Nile Coloring Books website and email"><strong>nilecoloringbooks.com</strong><span>sherif.in.26@gmail.com</span></div>
+          <p class="soc-instruction" id="soc-instruction">Tap an area to color it. Small details are easier when you zoom in.</p>
+        </div>
+        <div class="soc-controls" aria-label="Coloring tools">
+          <h3>Choose a color</h3>
+          <div class="soc-palette" id="soc-palette" role="group" aria-label="Colors">
+            <button type="button" style="--c:#FF7A3D" data-color="#FF7A3D" aria-label="Sunset orange" aria-pressed="true"></button>
+            <button type="button" style="--c:#FFC83D" data-color="#FFC83D" aria-label="Sunshine yellow" aria-pressed="false"></button>
+            <button type="button" style="--c:#E85D75" data-color="#E85D75" aria-label="Coral pink" aria-pressed="false"></button>
+            <button type="button" style="--c:#0F7C80" data-color="#0F7C80" aria-label="Nile teal" aria-pressed="false"></button>
+            <button type="button" style="--c:#77B89A" data-color="#77B89A" aria-label="Leaf green" aria-pressed="false"></button>
+            <button type="button" style="--c:#79B5DF" data-color="#79B5DF" aria-label="River blue" aria-pressed="false"></button>
+            <button type="button" style="--c:#A77DD2" data-color="#A77DD2" aria-label="Lotus purple" aria-pressed="false"></button>
+            <button type="button" style="--c:#E9A7CD" data-color="#E9A7CD" aria-label="Blossom pink" aria-pressed="false"></button>
+            <button type="button" style="--c:#F5A860" data-color="#F5A860" aria-label="Peach" aria-pressed="false"></button>
+            <button type="button" style="--c:#478B5A" data-color="#478B5A" aria-label="Palm green" aria-pressed="false"></button>
+            <button type="button" style="--c:#395BA8" data-color="#395BA8" aria-label="Ocean blue" aria-pressed="false"></button>
+            <button type="button" style="--c:#C97656" data-color="#C97656" aria-label="Terracotta" aria-pressed="false"></button>
+            <button type="button" style="--c:#BCE576" data-color="#BCE576" aria-label="Lime" aria-pressed="false"></button>
+            <button type="button" style="--c:#FFE087" data-color="#FFE087" aria-label="Soft gold" aria-pressed="false"></button>
+            <button type="button" style="--c:#79D8D0" data-color="#79D8D0" aria-label="Lagoon" aria-pressed="false"></button>
+            <button type="button" style="--c:#C3B49A" data-color="#C3B49A" aria-label="Sand" aria-pressed="false"></button>
+            <button type="button" style="--c:#5C6575" data-color="#5C6575" aria-label="Slate" aria-pressed="false"></button>
+            <button type="button" style="--c:#F4C6AD" data-color="#F4C6AD" aria-label="Apricot" aria-pressed="false"></button>
+          </div>
+          <h3>Choose a finish</h3>
+          <div class="soc-modes" id="soc-modes" role="group" aria-label="Coloring finish">
+            <button type="button" data-mode="solid" aria-pressed="true"><span class="soc-sample solid"></span> Solid</button>
+            <button type="button" data-mode="dots" aria-pressed="false"><span class="soc-sample dots"></span> Dots</button>
+            <button type="button" data-mode="rings" aria-pressed="false"><span class="soc-sample rings"></span> Circles</button>
+            <button type="button" data-mode="stripes" aria-pressed="false"><span class="soc-sample stripes"></span> Stripes</button>
+          </div>
+          <div class="soc-actions">
+            <button type="button" id="soc-erase" aria-pressed="false">Eraser</button>
+            <button type="button" id="soc-undo" disabled>Undo</button>
+            <button type="button" id="soc-redo" disabled>Redo</button>
+            <button type="button" id="soc-reset" disabled>Start over</button>
+          </div>
+          <button type="button" id="soc-save" class="soc-save">Save my art as PNG ↓</button>
+          <a class="soc-bigpage" href="/books/my-school-day-boy/">See the full book →</a>
+          <p class="soc-privacy">No account needed. Your colors stay on this device; the downloaded picture includes our website and contact email.</p>
+        </div>
+      </div>
+    </div>
+    <div class="studio-workspace soc-colored" id="soc-colored" hidden><img src="assets/studio/soccer-colored-example.webp" alt="The soccer page from My School Day — Boy Edition, colored in the studio" width="1087" height="1536"></div>
+  </div>
+  <div class="wrap studio-end"><span>This page is inside the book below.</span><a href="#discover-book">See the book <span aria-hidden="true">→</span></a></div>
+</section>
+
+    <section class="discover-book wrap" id="discover-book" aria-labelledby="discover-title">
+      <div class="section-heading"><p class="eyebrow">FROM THIS BOOK</p><h2 id="discover-title">My School Day — Boy Edition</h2><p>The soccer page above is Page 18 of this book — one of 24 coloring pages following a boy through his school day, from waking up to bedtime.</p></div>
+      <div class="discover-grid">
+        <a class="discover-cover" href="/books/my-school-day-boy/"><img src="assets/covers/my-school-day-boy.webp" alt="My School Day — Boy Edition cover" width="430" height="608" loading="lazy"></a>
+        <div class="discover-pages">
+          <a href="/books/my-school-day-boy/"><img src="assets/previews/my-school-day-boy/wake-up.webp" alt="Waking up — a page from My School Day, Boy Edition" loading="lazy"><span>Waking up</span></a>
+          <a href="/books/my-school-day-boy/"><img src="assets/previews/my-school-day-boy/school-arrival.webp" alt="Arriving at school — a page from My School Day, Boy Edition" loading="lazy"><span>Arriving at school</span></a>
+          <a href="/books/my-school-day-boy/"><img src="assets/previews/my-school-day-boy/bedtime.webp" alt="Bedtime — a page from My School Day, Boy Edition" loading="lazy"><span>Bedtime</span></a>
+        </div>
+        <div class="discover-buy">
+          <p class="discover-details"><b>24 coloring pages</b> · A4 PDF · English · Instant download</p>
+          <p class="discover-price"><span class="sale-price">$2.79</span> <s class="was-price">$3.99</s></p>
+          <p class="bf-dialog-note">🖤 Black Friday: 30% off applies automatically at checkout · Code <code class="bf-code">BLACKFRIDAY30</code> — ends Nov 30, 2026.</p>
+          <a class="button button-primary" href="https://sherif261.gumroad.com/l/xdeex?offer_code=BLACKFRIDAY30" target="_blank" rel="noopener noreferrer">Get the book · $2.79 →</a>
+          <p><a href="/books/my-school-day-boy/">See the full book page →</a></p>
+        </div>
+      </div>
+    </section>
+
     <section class="studio-section studio-v2" id="studio" aria-labelledby="studio-title">
   <div class="wrap studio-grid">
     <div class="studio-intro">
@@ -80,7 +175,12 @@
       <h2 id="studio-title">A beach day<br><em>in your colors.</em></h2>
       <p>Try this detailed family coloring page. Pick a color and a finish, then tap any open space. Save your artwork to your device when you're done.</p>
     </div>
-    <div class="studio-workspace" id="ncb-studio">
+    <div class="studio-preview" id="beach-preview">
+      <img src="assets/studio/beach-family-line-art.webp" alt="Beach family coloring page — a free sample" width="1087" height="1536" loading="lazy">
+      <div class="studio-preview-actions"><button type="button" id="beach-expand" class="button button-primary">Color this page here ↓</button><a class="button button-text" href="coloring-studio.html" target="_blank" rel="noopener">Color in a big page ↗</a></div>
+      <p class="studio-preview-note">A free sample page — it isn't inside a paid book. No account needed; your colors stay on this device.</p>
+    </div>
+    <div class="studio-workspace" id="ncb-studio" hidden>
       <div class="drawing-top"><span><i aria-hidden="true"></i> YOUR COLORING PAGE</span><span id="ncb-count" aria-live="polite">Ready to color</span></div>
       <div class="ncb-layout">
         <div class="ncb-art-panel">
@@ -138,14 +238,6 @@
   </div>
   <div class="wrap studio-end"><span>Want more pages like this?</span><a href="#books" data-filter-link="kids">Explore the books <span aria-hidden="true">→</span></a></div>
 </section>
-
-    <section class="books-section wrap" id="books" aria-labelledby="books-title"><div class="books-head"><div><p class="eyebrow">THE BOOKSHELF</p><h2 id="books-title">Pick the one that <em>feels like you.</em></h2><p>Little adventures, quiet moments, and plenty of possibility on every page.</p>
-      <p class="bf-books-note">🖤 <strong>Black Friday:</strong> 30% off every book, all November — 30% off applies automatically at checkout · Code <code class="bf-code">BLACKFRIDAY30</code>. Ends Monday, Nov 30.</p></div><span class="catalog-count">11 books · 2 bundles</span></div>
-      <div class="filter-row" role="group" aria-label="Filter books"><button class="filter active" data-filter="all" aria-pressed="true">All books</button><button class="filter" data-filter="kids" aria-pressed="false">For kids</button><button class="filter" data-filter="adults" aria-pressed="false">For grown-ups</button></div>
-      <div class="catalog" id="catalog" aria-live="polite"></div>
-      <noscript><p>Browse the books: <a href="/books/little-nile-explorer/">Little Nile Explorer</a> · <a href="/books/forest-animal-friends/">Forest Animal Friends</a> · <a href="/books/amazing-wildlife-vol-2/">Amazing Wildlife Vol. 2</a> · <a href="/books/my-school-day-boy/">My School Day — Boy Edition</a> · <a href="/books/my-school-day-girl/">My School Day — Girl Edition</a> · <a href="/books/summer-seaside-boy/">Summer Seaside — Boy Edition</a> · <a href="/books/little-garden-neighbors/">Little Garden Neighbors</a> · <a href="/books/cute-wild-animals/">Cute Wild Animals</a> · <a href="/books/farm-and-friends/">Farm &amp; Friends</a> · <a href="/books/cute-cow/">Cute Cow Mini-Pack</a> · <a href="/books/nile-mandalas/">Nile Mandalas</a> · <a href="/books/wild-farm-bundle/">Wild + Farm Animals</a> · <a href="/books/complete-animal-collection/">Complete Animal Collection</a></p></noscript>
-      <p class="catalog-disclaimer">Covers shown are from the supplied books. Checkout opens on Gumroad. Interior previews are being confirmed before launch.</p>
-    </section>
 
     <section class="guestbook-section wrap" id="guestbook" aria-labelledby="guestbook-title"><div class="section-heading"><p class="eyebrow">SAY HELLO</p><h2 id="guestbook-title">Visitor Guestbook 💛</h2><p>Colored one of our books? Leave a little hello! Every message is read before it appears here.</p></div>
       <div class="guestbook-grid">

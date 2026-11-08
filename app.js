@@ -26,19 +26,35 @@ function coverMarkup(book) {
   return `<div class="missing-cover"><span>✳</span><b>${escapeHTML(book.title)}</b><small>Cover artwork pending</small></div>`;
 }
 
-function renderCatalog() {
-  const visible = products.filter(book => activeFilter === "all" || book.category === activeFilter);
-  catalogNode.innerHTML = visible.map(book => `<article class="book-card">
+const SHELVES = [
+  {id: "ages-4-7", title: "Ages 4–7 — first coloring adventures"},
+  {id: "animals", title: "Animals — meet the creatures"},
+  {id: "school", title: "School days"},
+  {id: "quiet", title: "A quiet moment — for grown-ups"},
+];
+
+function cardHTML(book) {
+  return `<article class="book-card">
     <button class="book-image-button" type="button" data-book="${escapeHTML(book.slug)}" aria-label="View ${escapeHTML(book.title)}">
       <div class="book-cover" style="--card-bg:${cardColor(book.cardColor)}">
-        ${coverMarkup(book)}<span class="book-badge">${escapeHTML(book.label || (book.category === "kids" ? "For kids" : "For adults"))}</span><span class="sale-badge">−30% · BLACK FRIDAY</span>
+        ${coverMarkup(book)}<span class="book-badge">${escapeHTML(book.label || (book.category === "kids" ? "For kids" : "For adults"))}</span>
       </div></button>
     <div class="book-meta"><span class="book-category">${escapeHTML(book.kind || "Coloring book")}</span>
-      <h3>${escapeHTML(book.title)}</h3><div class="book-bottom"><span class="book-price">${book.price == null ? "Price pending" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</span>
+      <h3>${escapeHTML(book.title)}</h3>
+      <p class="book-pages">${book.pages ? `${book.pages} pages · ${escapeHTML(book.sizes || "A4")}` : ""}</p>
+      <div class="book-bottom"><span class="book-price">${book.price == null ? "Price pending" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</span>
       <button type="button" data-book="${escapeHTML(book.slug)}">View book →</button></div>
-      <p class="book-code-hint">−30% with code ${BF_CODE} · applies automatically</p>
-    </div></article>`).join("");
-  if (!visible.length) catalogNode.innerHTML = "<p>No books in this collection yet.</p>";
+    </div></article>`;
+}
+
+function renderCatalog() {
+  const visible = products.filter(book => activeFilter === "all" || book.category === activeFilter);
+  if (!visible.length) { catalogNode.innerHTML = "<p>No books in this collection yet.</p>"; return; }
+  const groups = SHELVES.map(shelf => ({...shelf, books: visible.filter(b => b.shelf === shelf.id)}))
+    .filter(g => g.books.length);
+  const ungrouped = visible.filter(b => !SHELVES.some(shelf => shelf.id === b.shelf));
+  if (ungrouped.length) groups.push({id: "more", title: "More books", books: ungrouped});
+  catalogNode.innerHTML = groups.map(g => `<section class="shelf" aria-label="${escapeHTML(g.title)}"><h3 class="shelf-title">${escapeHTML(g.title)}</h3><div class="catalog-grid">${g.books.map(cardHTML).join("")}</div></section>`).join("");
 }
 
 function setFilter(filter) {
@@ -58,11 +74,16 @@ function openBook(slug) {
   const checkout = checkoutURL
     ? `<a class="button button-primary" href="${escapeHTML(checkoutURL.href)}" target="_blank" rel="noopener noreferrer">Get the book · ${book.price == null ? "See price" : money(salePrice(book.price))} →</a><p class="bf-dialog-note">🖤 Black Friday: 30% off applies automatically at checkout · Code <code class="bf-code">${BF_CODE}</code> — ends Nov 30, 2026.</p><p class="book-actual-note">Checkout opens on ${escapeHTML(checkoutURL.hostname)}.</p>`
     : '<p class="pending-link">Purchase link pending. This preview does not take payments.</p>';
+  const previews = Array.isArray(book.previews) ? book.previews : [];
+  const previewHTML = previews.length
+    ? `<div class="dialog-previews"><h3>Inside the book — real pages</h3><div class="dialog-preview-grid">${previews.map(p => `<a class="dialog-preview" href="/books/${encodeURIComponent(book.slug)}/#previews"><img src="${escapeHTML(p.src)}" alt="${escapeHTML(p.label)}" loading="lazy"><span>${escapeHTML(p.label)}</span></a>`).join("")}</div></div>`
+    : "";
+  const awaiting = previews.length ? "" : `<p class="book-actual-note">Interior previews are awaiting the actual book files.</p>`;
   dialogContent.innerHTML = `<div class="dialog-grid"><div class="dialog-cover">${coverMarkup(book)}</div>
     <div class="dialog-copy"><span class="mini-label">${escapeHTML(book.kind || "Coloring book")}</span>
       <h2 id="dialog-title">${escapeHTML(book.title)}</h2><p>${escapeHTML(book.description || "A printable coloring book to make your own.")}</p>
       <p class="dialog-price">${book.price == null ? "Price to confirm" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</p>
-      ${checkout}<p><a href="/books/${encodeURIComponent(book.slug)}/">View full book page →</a></p><p class="book-actual-note">Interior previews are awaiting the actual book files.</p>
+      ${checkout}${previewHTML}<p><a href="/books/${encodeURIComponent(book.slug)}/">View full book page →</a></p>${awaiting}
     </div></div>`;
   dialog.showModal();
 }
@@ -119,16 +140,6 @@ dialog.addEventListener("click", event => { if (event.target === dialog) dialog.
 document.querySelector("#year").textContent = new Date().getFullYear();
 loadCatalog();
 
-// v1.2 — short intro: hides after ~1.4s, on click, or at once for reduced motion.
-(function(){
-  const intro = document.querySelector("#intro");
-  if (!intro) return;
-  const hide = () => { intro.classList.add("intro-hide"); setTimeout(() => intro.remove(), 450); };
-  if (matchMedia("(prefers-reduced-motion: reduce)").matches) { intro.remove(); return; }
-  const timer = setTimeout(hide, 1400);
-  intro.addEventListener("click", () => { clearTimeout(timer); hide(); });
-})();
-
 // Black Friday countdown: days left until Nov 30, 2026 (Cairo time).
 (function () {
   var el = document.getElementById("bf-days");
@@ -162,4 +173,33 @@ loadCatalog();
       try { localStorage.setItem("nbc-counted", "1"); } catch (e) {}
     })
     .catch(function () { done = true; clearTimeout(timer); el.textContent = "—"; });
+})();
+
+// v1.2.8: the beach studio on the homepage starts as a small preview; the full
+// studio loads only when the visitor asks for it.
+(function () {
+  const btn = document.querySelector("#beach-expand");
+  const preview = document.querySelector("#beach-preview");
+  const studio = document.querySelector("#ncb-studio");
+  if (!btn || !preview || !studio) return;
+  btn.addEventListener("click", () => {
+    preview.hidden = true;
+    studio.hidden = false;
+    studio.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth", block: "start"});
+  });
+})();
+
+// v1.2.8: "See it after coloring" — swap the soccer studio for its colored example.
+(function () {
+  const btn = document.querySelector("#soc-colored-toggle");
+  const studio = document.querySelector("#soc-studio");
+  const colored = document.querySelector("#soc-colored");
+  if (!btn || !studio || !colored) return;
+  btn.addEventListener("click", () => {
+    const showing = colored.hidden;
+    colored.hidden = !showing;
+    studio.hidden = showing;
+    btn.setAttribute("aria-pressed", String(showing));
+    btn.textContent = showing ? "↩ Back to coloring" : "👀 See it after coloring";
+  });
 })();
