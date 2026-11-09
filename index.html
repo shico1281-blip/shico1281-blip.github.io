@@ -93,52 +93,76 @@
       <div class="drawing-top"><span><i aria-hidden="true"></i> YOUR COLORING PAGE · PAGE 18 FROM MY SCHOOL DAY — BOY</span><span id="soc-count" aria-live="polite">Ready to color</span></div>
       <div class="soc-layout">
         <div class="soc-art-panel">
+          <div class="soc-zoom" role="group" aria-label="Zoom"><button type="button" id="soc-zoom-out" aria-label="Zoom out">−</button><span id="soc-zoom-label" aria-live="polite">100%</span><button type="button" id="soc-zoom-in" aria-label="Zoom in">+</button><span class="soc-zoom-hint">Zoom in to color the small details</span></div>
           <div class="soc-art" id="soc-art">
             <canvas id="soc-paint" width="1087" height="1536" tabindex="0" role="img" aria-label="Soccer boy coloring page, page 18 from My School Day — Boy Edition. Pick a color and tap an area. Keyboard: arrow keys move, Enter colors."></canvas>
             <canvas id="soc-feedback" width="1087" height="1536" aria-hidden="true"></canvas>
-            <img id="soc-lines" src="assets/studio/soccer-line-art.webp" width="1087" height="1536" alt="" decoding="async" loading="lazy">
+            <img id="soc-lines" src="assets/studio/soccer-line-art.webp" width="708" height="1000" alt="" decoding="async" loading="lazy">
+            <canvas id="soc-ink" width="1087" height="1536" aria-hidden="true"></canvas>
             <span id="soc-cursor" aria-hidden="true"></span>
             <span class="soc-loading" id="soc-loading" role="status">Preparing your coloring page…</span>
           </div>
           <div class="soc-brand-preview" aria-label="Nile Coloring Books website and email"><strong>nilecoloringbooks.com</strong><span>sherif.in.26@gmail.com</span></div>
-          <p class="soc-instruction" id="soc-instruction">Tap an area to color it. Small details are easier when you zoom in.</p>
+          <p class="soc-instruction" id="soc-instruction">Tap an area to color it — or draw with the pen and stamps. Small details are easier when you zoom in.</p>
         </div>
         <div class="soc-controls" aria-label="Coloring tools">
-          <h3>Choose a color</h3>
+          <h3>Choose a color — 12 colors</h3>
           <div class="soc-palette" id="soc-palette" role="group" aria-label="Colors">
-            <button type="button" style="--c:#FF7A3D" data-color="#FF7A3D" aria-label="Sunset orange" aria-pressed="true"></button>
-            <button type="button" style="--c:#FFC83D" data-color="#FFC83D" aria-label="Sunshine yellow" aria-pressed="false"></button>
-            <button type="button" style="--c:#E85D75" data-color="#E85D75" aria-label="Coral pink" aria-pressed="false"></button>
-            <button type="button" style="--c:#0F7C80" data-color="#0F7C80" aria-label="Nile teal" aria-pressed="false"></button>
-            <button type="button" style="--c:#77B89A" data-color="#77B89A" aria-label="Leaf green" aria-pressed="false"></button>
-            <button type="button" style="--c:#79B5DF" data-color="#79B5DF" aria-label="River blue" aria-pressed="false"></button>
-            <button type="button" style="--c:#A77DD2" data-color="#A77DD2" aria-label="Lotus purple" aria-pressed="false"></button>
-            <button type="button" style="--c:#E9A7CD" data-color="#E9A7CD" aria-label="Blossom pink" aria-pressed="false"></button>
-            <button type="button" style="--c:#F5A860" data-color="#F5A860" aria-label="Peach" aria-pressed="false"></button>
-            <button type="button" style="--c:#478B5A" data-color="#478B5A" aria-label="Palm green" aria-pressed="false"></button>
-            <button type="button" style="--c:#395BA8" data-color="#395BA8" aria-label="Ocean blue" aria-pressed="false"></button>
-            <button type="button" style="--c:#C97656" data-color="#C97656" aria-label="Terracotta" aria-pressed="false"></button>
-            <button type="button" style="--c:#BCE576" data-color="#BCE576" aria-label="Lime" aria-pressed="false"></button>
-            <button type="button" style="--c:#FFE087" data-color="#FFE087" aria-label="Soft gold" aria-pressed="false"></button>
-            <button type="button" style="--c:#79D8D0" data-color="#79D8D0" aria-label="Lagoon" aria-pressed="false"></button>
-            <button type="button" style="--c:#C3B49A" data-color="#C3B49A" aria-label="Sand" aria-pressed="false"></button>
-            <button type="button" style="--c:#5C6575" data-color="#5C6575" aria-label="Slate" aria-pressed="false"></button>
-            <button type="button" style="--c:#F4C6AD" data-color="#F4C6AD" aria-label="Apricot" aria-pressed="false"></button>
+            <button type="button" style="--c:#E23B3B" data-color="#E23B3B" aria-label="Red" aria-pressed="true"></button>
+            <button type="button" style="--c:#F58220" data-color="#F58220" aria-label="Orange" aria-pressed="false"></button>
+            <button type="button" style="--c:#FFC91F" data-color="#FFC91F" aria-label="Yellow" aria-pressed="false"></button>
+            <button type="button" style="--c:#7AC74F" data-color="#7AC74F" aria-label="Light green" aria-pressed="false"></button>
+            <button type="button" style="--c:#1F9D66" data-color="#1F9D66" aria-label="Green" aria-pressed="false"></button>
+            <button type="button" style="--c:#35B6E8" data-color="#35B6E8" aria-label="Sky blue" aria-pressed="false"></button>
+            <button type="button" style="--c:#2563EB" data-color="#2563EB" aria-label="Blue" aria-pressed="false"></button>
+            <button type="button" style="--c:#7C4DBD" data-color="#7C4DBD" aria-label="Purple" aria-pressed="false"></button>
+            <button type="button" style="--c:#F272B5" data-color="#F272B5" aria-label="Pink" aria-pressed="false"></button>
+            <button type="button" style="--c:#8A5A33" data-color="#8A5A33" aria-label="Brown" aria-pressed="false"></button>
+            <button type="button" style="--c:#8D99AE" data-color="#8D99AE" aria-label="Gray" aria-pressed="false"></button>
+            <button type="button" style="--c:#2B2B2B" data-color="#2B2B2B" aria-label="Black" aria-pressed="false"></button>
           </div>
-          <h3>Choose a finish</h3>
-          <div class="soc-modes" id="soc-modes" role="group" aria-label="Coloring finish">
-            <button type="button" data-mode="solid" aria-pressed="true"><span class="soc-sample solid"></span> Solid</button>
-            <button type="button" data-mode="dots" aria-pressed="false"><span class="soc-sample dots"></span> Dots</button>
-            <button type="button" data-mode="rings" aria-pressed="false"><span class="soc-sample rings"></span> Circles</button>
-            <button type="button" data-mode="stripes" aria-pressed="false"><span class="soc-sample stripes"></span> Stripes</button>
+          <div class="soc-custom"><label for="soc-custom-color">Or pick any custom color:</label><input type="color" id="soc-custom-color" value="#7C4DBD" aria-label="Custom color"><span id="soc-current-color">Current: Red</span></div>
+          <h3>Fill style</h3>
+          <div class="soc-modes" id="soc-styles" role="group" aria-label="Fill style">
+            <button type="button" data-style="solid" aria-pressed="true"><span class="soc-sample solid"></span> Solid</button>
+            <button type="button" data-style="gradLin" aria-pressed="false"><span class="soc-sample gradlin"></span> Linear gradient</button>
+            <button type="button" data-style="gradRad" aria-pressed="false"><span class="soc-sample gradrad"></span> Radial gradient</button>
+            <button type="button" data-style="pattern" aria-pressed="false"><span class="soc-sample dots"></span> Pattern</button>
           </div>
+          <div class="soc-patterns" id="soc-patterns" role="group" aria-label="Patterns" hidden>
+            <button type="button" data-pattern="hlines" aria-pressed="false"><span class="soc-pat-sample hlines"></span>Lines</button>
+            <button type="button" data-pattern="vlines" aria-pressed="false"><span class="soc-pat-sample vlines"></span>Columns</button>
+            <button type="button" data-pattern="diag" aria-pressed="false"><span class="soc-pat-sample diag"></span>Diagonal</button>
+            <button type="button" data-pattern="dots" aria-pressed="true"><span class="soc-pat-sample dots"></span>Dots</button>
+            <button type="button" data-pattern="waves" aria-pressed="false"><span class="soc-pat-sample waves"></span>Waves</button>
+            <button type="button" data-pattern="zigzag" aria-pressed="false"><span class="soc-pat-sample zigzag"></span>Zigzag</button>
+            <button type="button" data-pattern="stars" aria-pressed="false"><span class="soc-pat-sample stars"></span>Stars</button>
+            <button type="button" data-pattern="hearts" aria-pressed="false"><span class="soc-pat-sample hearts"></span>Hearts</button>
+            <button type="button" data-pattern="checker" aria-pressed="false"><span class="soc-pat-sample checker"></span>Checker</button>
+            <button type="button" data-pattern="rings" aria-pressed="false"><span class="soc-pat-sample rings"></span>Circles</button>
+          </div>
+          <h3>Tools</h3>
+          <div class="soc-tools" id="soc-tools" role="group" aria-label="Tools">
+            <button type="button" data-tool="fill" aria-pressed="true">🪣 Fill</button>
+            <button type="button" data-tool="pen" aria-pressed="false">✏️ Pen</button>
+            <button type="button" data-tool="stamp" aria-pressed="false">⭐ Stamp</button>
+            <button type="button" data-tool="eraser" aria-pressed="false">🧽 Eraser</button>
+          </div>
+          <div class="soc-stamps" id="soc-stamps" role="group" aria-label="Stamps" hidden>
+            <button type="button" data-stamp="star" aria-pressed="true">⭐ Star</button>
+            <button type="button" data-stamp="heart" aria-pressed="false">♥ Heart</button>
+            <button type="button" data-stamp="flower" aria-pressed="false">🌸 Flower</button>
+            <button type="button" data-stamp="sun" aria-pressed="false">☀️ Sun</button>
+          </div>
+          <div class="soc-size" id="soc-size" hidden><label for="soc-size-range">Brush size</label><input type="range" id="soc-size-range" min="2" max="22" value="7"><b id="soc-size-val">7</b></div>
           <div class="soc-actions">
-            <button type="button" id="soc-erase" aria-pressed="false">Eraser</button>
             <button type="button" id="soc-undo" disabled>Undo</button>
             <button type="button" id="soc-redo" disabled>Redo</button>
+            <button type="button" id="soc-random">🎲 Surprise me</button>
             <button type="button" id="soc-reset" disabled>Start over</button>
           </div>
           <button type="button" id="soc-save" class="soc-save">Save my art as PNG ↓</button>
+          <button type="button" id="soc-save-svg" class="soc-save-svg">Save my art as SVG ↓</button>
           <a class="soc-bigpage" href="/books/my-school-day-boy/">See the full book →</a>
           <p class="soc-privacy">No account needed. Your colors stay on this device; the downloaded picture includes our website and contact email.</p>
         </div>
