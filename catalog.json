@@ -371,6 +371,134 @@
   ]
  },
  {
+  "slug": "pharaonic-mandala-book-1-pharaohs",
+  "title": "Pharaonic Mandala Coloring Book — Book 1: Pharaohs",
+  "category": "adults",
+  "kind": "Coloring book",
+  "label": "For adults",
+  "price": 3.99,
+  "image": "assets/covers/pharaonic-mandala-book-1-pharaohs.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f5e6c8",
+  "description": "Egyptian mandala coloring book for adults — Book 1: Pharaohs: 25 intricate printable pharaoh coloring pages: a golden pharaoh bust, a pharaoh with crook and flail, a uraeus cobra crown, Nefertiti, thrones, chariots, cartouches and more. Detailed Egyptian mandalas for relaxing coloring and stress relief. A4 PDF. Instant download.",
+  "purchaseUrl": "",
+  "keyword": "Egyptian mandala coloring book",
+  "shelf": "quiet",
+  "pages": 26,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/pharaonic-mandala-book-1-pharaohs/pharaoh-bust.webp",
+    "label": "Pharaoh bust with scarab ring"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-1-pharaohs/pharaoh-crook-flail.webp",
+    "label": "Pharaoh with crook and flail"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-1-pharaohs/uraeus-cobra.webp",
+    "label": "Uraeus cobra crown mandala"
+   }
+  ]
+ },
+ {
+  "slug": "pharaonic-mandala-book-2-egyptian-gods",
+  "title": "Pharaonic Mandala Coloring Book — Book 2: Egyptian Gods",
+  "category": "adults",
+  "kind": "Coloring book",
+  "label": "For adults",
+  "price": 3.99,
+  "image": "assets/covers/pharaonic-mandala-book-2-egyptian-gods.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e3e9f5",
+  "description": "Egyptian mandala coloring book for adults — Book 2: Egyptian Gods: 25 intricate printable mandala coloring pages of the gods of ancient Egypt: Ra the falcon-headed sun god, Thoth god of writing, Anubis, Bastet, Isis, temple columns and more. Detailed Egyptian mandalas for relaxing coloring and stress relief. A4 PDF. Instant download.",
+  "purchaseUrl": "",
+  "keyword": "Egyptian mandala coloring book",
+  "shelf": "quiet",
+  "pages": 26,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/pharaonic-mandala-book-2-egyptian-gods/ra-sun-god.webp",
+    "label": "Ra, the falcon-headed sun god"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-2-egyptian-gods/thoth-writing.webp",
+    "label": "Thoth, god of writing"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-2-egyptian-gods/temple-columns.webp",
+    "label": "Temple columns with lotus capitals"
+   }
+  ]
+ },
+ {
+  "slug": "pharaonic-mandala-book-3-nile-life",
+  "title": "Pharaonic Mandala Coloring Book — Book 3: Nile Life",
+  "category": "adults",
+  "kind": "Coloring book",
+  "label": "For adults",
+  "price": 3.99,
+  "image": "assets/covers/pharaonic-mandala-book-3-nile-life.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e2f0e4",
+  "description": "Egyptian mandala coloring book for adults — Book 3: Nile Life: 25 intricate printable mandala coloring pages from life on the Nile: a lotus mandala, a cobra among lotus flowers, a goose, papyrus, ibis, fish, feluccas and more. Detailed Egyptian mandalas for relaxing coloring and stress relief. A4 PDF. Instant download.",
+  "purchaseUrl": "",
+  "keyword": "Egyptian mandala coloring book",
+  "shelf": "quiet",
+  "pages": 26,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/pharaonic-mandala-book-3-nile-life/lotus-mandala.webp",
+    "label": "Lotus mandala"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-3-nile-life/cobra-lotus.webp",
+    "label": "Cobra among lotus flowers"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-3-nile-life/nile-goose.webp",
+    "label": "Goose in a lotus ring"
+   }
+  ]
+ },
+ {
+  "slug": "pharaonic-mandala-book-4-pyramids-treasures",
+  "title": "Pharaonic Mandala Coloring Book — Book 4: Pyramids & Treasures",
+  "category": "adults",
+  "kind": "Coloring book",
+  "label": "For adults",
+  "price": 3.99,
+  "image": "assets/covers/pharaonic-mandala-book-4-pyramids-treasures.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f7e3d3",
+  "description": "Egyptian mandala coloring book for adults — Book 4: Pyramids & Treasures: 25 intricate printable mandala coloring pages: a pyramid, a treasure chest of gold and gems, Ra’s solar boat, the Sphinx, golden masks and more. Detailed Egyptian mandalas for relaxing coloring and stress relief. A4 PDF. Instant download.",
+  "purchaseUrl": "",
+  "keyword": "Egyptian mandala coloring book",
+  "shelf": "quiet",
+  "pages": 26,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/pharaonic-mandala-book-4-pyramids-treasures/pyramid-mandala.webp",
+    "label": "Pyramid with hieroglyph rings"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-4-pyramids-treasures/treasure-chest.webp",
+    "label": "Treasure chest of gold and gems"
+   },
+   {
+    "src": "assets/previews/pharaonic-mandala-book-4-pyramids-treasures/solar-boat.webp",
+    "label": "Ra’s solar boat"
+   }
+  ]
+ },
+ {
   "slug": "wild-farm-bundle",
   "title": "Wild + Farm Animals",
   "category": "kids",
