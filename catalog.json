@@ -1,281 +1,407 @@
 [
-  {
-    "slug": "little-nile-explorer",
-    "title": "Little Nile Explorer",
-    "category": "kids",
-    "kind": "Coloring book",
-    "label": "Ages 4–7",
-    "price": 3.99,
-    "image": "assets/covers/little-nile-explorer.webp",
-    "width": 325,
-    "height": 650,
-    "cardColor": "#fff0c7",
-    "description": "Printable coloring pages for kids ages 4–7, in English and Arabic. 24 pages: cover + title page + 20 coloring pages + 2 activity pages (Count & Match, Maze). A4 and US Letter PDFs. Instant download.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/little-nile-explorer?offer_code=BLACKFRIDAY30",
-    "keyword": "Printable coloring pages for kids ages 4-7",
-    "shelf": "ages-4-7",
-    "pages": 24,
-    "sizes": "A4 + Letter",
-    "previews": [
-      {
-        "src": "assets/previews/little-nile-explorer/frog.webp",
-        "label": "Frog in the reeds — an easy page"
-      },
-      {
-        "src": "assets/previews/little-nile-explorer/pyramids.webp",
-        "label": "The Pyramids — a detailed page"
-      },
-      {
-        "src": "assets/previews/little-nile-explorer/maze.webp",
-        "label": "Help the Fish Find the Lotus — an activity page"
-      }
-    ]
-  },
-  {
-    "slug": "forest-animal-friends",
-    "title": "Forest Animal Friends",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 2.99,
-    "image": "assets/covers/forest-animal-friends.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#e4f1dd",
-    "description": "Animal coloring book with 25 pages: cover + 24 friendly forest animal coloring pages. A4 PDF. Instant download.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/ntawdj?offer_code=BLACKFRIDAY30",
-    "keyword": "Animal coloring book",
-    "shelf": "animals",
-    "pages": 25,
-    "sizes": "A4",
-    "previews": [
-      {
-        "src": "assets/previews/forest-animal-friends/deer.webp",
-        "label": "A friendly deer — an easy page"
-      },
-      {
-        "src": "assets/previews/forest-animal-friends/red-panda.webp",
-        "label": "Red panda on a branch — a detailed page"
-      },
-      {
-        "src": "assets/previews/forest-animal-friends/fox.webp",
-        "label": "Fox in the forest — a detailed page"
-      }
-    ]
-  },
-  {
-    "slug": "amazing-wildlife-vol-2",
-    "title": "Amazing Wildlife Vol. 2",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 3.99,
-    "image": "assets/covers/amazing-wildlife-vol2.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#e3f3f1",
-    "description": "Wild animals coloring book — 24 printable wildlife coloring pages for kids. A4 and US Letter PDFs.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/vrizh?offer_code=BLACKFRIDAY30",
-    "keyword": "Wild animals coloring book",
-    "shelf": "animals",
-    "pages": 24,
-    "sizes": "A4 + Letter"
-  },
-  {
-    "slug": "my-school-day-boy",
-    "title": "My School Day — Boy Edition",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 3.99,
-    "image": "assets/covers/my-school-day-boy.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#e5f2fd",
-    "description": "Back to school coloring book — 24 coloring pages following a boy through his school day. A4 PDF. Instant download.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/xdeex?offer_code=BLACKFRIDAY30",
-    "keyword": "Back to school coloring book",
-    "shelf": "school",
-    "pages": 24,
-    "sizes": "A4"
-  },
-  {
-    "slug": "my-school-day-girl",
-    "title": "My School Day — Girl Edition",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 3.99,
-    "image": "assets/covers/my-school-day-girl.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#fce6e9",
-    "description": "Back to school coloring book — 24 coloring pages following a girl through her school day, from waking up to bedtime. A4 PDF. Instant download.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/nxyfe?offer_code=BLACKFRIDAY30",
-    "keyword": "Back to school coloring book",
-    "shelf": "school",
-    "pages": 24,
-    "sizes": "A4",
-    "previews": [
-      {
-        "src": "assets/previews/my-school-day-girl/wake-up.webp",
-        "label": "Waking up — the day begins"
-      },
-      {
-        "src": "assets/previews/my-school-day-girl/class.webp",
-        "label": "At school — a detailed page"
-      },
-      {
-        "src": "assets/previews/my-school-day-girl/bedtime.webp",
-        "label": "Bedtime — the day ends"
-      }
-    ]
-  },
-  {
-    "slug": "summer-seaside-boy",
-    "title": "Summer Seaside — Boy Edition",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 3.99,
-    "image": "assets/covers/summer-seaside-boy.webp",
-    "width": 430,
-    "height": 617,
-    "cardColor": "#e4f3fa",
-    "description": "Summer coloring pages for kids — a seaside coloring adventure: 26 pages, cover + 25 coloring pages including a bonus ice-cream page. A4 and US Letter PDFs. Instant download.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/meavla?offer_code=BLACKFRIDAY30",
-    "keyword": "Summer coloring pages for kids",
-    "shelf": "ages-4-7",
-    "pages": 26,
-    "sizes": "A4 + Letter",
-    "previews": [
-      {
-        "src": "assets/previews/summer-seaside-boy/waking-up.webp",
-        "label": "Waking up, dreaming of the beach"
-      },
-      {
-        "src": "assets/previews/summer-seaside-boy/sandcastle.webp",
-        "label": "Building a sandcastle"
-      },
-      {
-        "src": "assets/previews/summer-seaside-boy/ice-cream.webp",
-        "label": "Ice-cream time — the bonus page"
-      }
-    ]
-  },
-  {
-    "slug": "little-garden-neighbors",
-    "title": "Little Garden Neighbors",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 3.99,
-    "image": "assets/covers/little-garden-neighbors.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#e7f3dc",
-    "description": "Easy coloring pages for kids — 24 printable pages of garden creatures and nature. A4 and US Letter PDFs.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/kpuvt?offer_code=BLACKFRIDAY30",
-    "keyword": "Easy coloring pages for kids",
-    "shelf": "ages-4-7",
-    "pages": 24,
-    "sizes": "A4 + Letter"
-  },
-  {
-    "slug": "cute-wild-animals",
-    "title": "Cute Wild Animals",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 2.25,
-    "image": "assets/covers/wild-animals.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#fcefd7",
-    "description": "Cute animal coloring pages — 11 printable pages of wild animals. A4 PDF.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/bsacyp?offer_code=BLACKFRIDAY30",
-    "keyword": "Cute animal coloring pages",
-    "shelf": "ages-4-7",
-    "pages": 11,
-    "sizes": "A4"
-  },
-  {
-    "slug": "farm-and-friends",
-    "title": "Farm & Friends",
-    "category": "kids",
-    "kind": "Coloring book",
-    "price": 2.25,
-    "image": "assets/covers/farm-animals.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#f4eee0",
-    "description": "Farm animals coloring book — 10 printable pages of farm animals. A4 PDF.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/rfuqjm?offer_code=BLACKFRIDAY30",
-    "keyword": "Farm animals coloring book",
-    "shelf": "ages-4-7",
-    "pages": 10,
-    "sizes": "A4"
-  },
-  {
-    "slug": "cute-cow",
-    "title": "Cute Cow Mini-Pack",
-    "category": "kids",
-    "kind": "Coloring pack",
-    "price": 1.49,
-    "image": "assets/covers/cow-mini-pack.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#fce7ed",
-    "description": "Cow coloring pages — 10 printable pages starring the same cow throughout. A4 PDF.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/gbczty?offer_code=BLACKFRIDAY30",
-    "keyword": "Cow coloring pages",
-    "shelf": "ages-4-7",
-    "pages": 10,
-    "sizes": "A4"
-  },
-  {
-    "slug": "nile-mandalas",
-    "title": "Nile Mandalas",
-    "category": "adults",
-    "kind": "Coloring book",
-    "label": "For adults",
-    "price": 6.99,
-    "image": "assets/covers/nile-mandalas-adults.webp",
-    "width": 325,
-    "height": 650,
-    "cardColor": "#e5eee8",
-    "description": "Mandala coloring book for adults — 22 detailed printable mandala designs for mindfulness and stress relief. A4 and US Letter PDFs.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/nile-mandalas?offer_code=BLACKFRIDAY30",
-    "keyword": "Mandala coloring book for adults",
-    "shelf": "quiet",
-    "pages": 24,
-    "sizes": "A4 + Letter"
-  },
-  {
-    "slug": "wild-farm-bundle",
-    "title": "Wild + Farm Animals",
-    "category": "kids",
-    "kind": "Bundle",
-    "price": 3.75,
-    "image": "assets/covers/bundle-1-plus-3.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#e3f3ed",
-    "description": "Animal coloring book bundle — 21 wild and farm animal coloring pages in one set. A4 PDF. Instant download.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/fkxuoc?offer_code=BLACKFRIDAY30",
-    "keyword": "Animal coloring book bundle",
-    "shelf": "animals",
-    "pages": 21,
-    "sizes": "A4"
-  },
-  {
-    "slug": "complete-animal-collection",
-    "title": "Complete Animal Collection",
-    "category": "kids",
-    "kind": "Bundle",
-    "price": 4.49,
-    "image": "assets/covers/full-set.webp",
-    "width": 430,
-    "height": 608,
-    "cardColor": "#f3eafa",
-    "description": "The full animal coloring collection in one set — 32 printable pages. A4 PDF. Instant download.",
-    "purchaseUrl": "https://sherif261.gumroad.com/l/mzzjupn?offer_code=BLACKFRIDAY30",
-    "keyword": "Printable coloring pages bundle",
-    "shelf": "animals",
-    "pages": 32,
-    "sizes": "A4"
-  }
+ {
+  "slug": "little-nile-explorer",
+  "title": "Little Nile Explorer",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–7",
+  "price": 3.99,
+  "image": "assets/covers/little-nile-explorer.webp",
+  "width": 325,
+  "height": 650,
+  "cardColor": "#fff0c7",
+  "description": "Printable coloring pages for kids ages 4–7, in English and Arabic. 24 pages: cover + title page + 20 coloring pages + 2 activity pages (Count & Match, Maze). A4 and US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/little-nile-explorer?offer_code=BLACKFRIDAY30",
+  "keyword": "Printable coloring pages for kids ages 4-7",
+  "shelf": "ages-4-7",
+  "pages": 24,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/little-nile-explorer/frog.webp",
+    "label": "Frog in the reeds — an easy page"
+   },
+   {
+    "src": "assets/previews/little-nile-explorer/pyramids.webp",
+    "label": "The Pyramids — a detailed page"
+   },
+   {
+    "src": "assets/previews/little-nile-explorer/maze.webp",
+    "label": "Help the Fish Find the Lotus — an activity page"
+   }
+  ]
+ },
+ {
+  "slug": "forest-animal-friends",
+  "title": "Forest Animal Friends",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 2.99,
+  "image": "assets/covers/forest-animal-friends.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e4f1dd",
+  "description": "Animal coloring book with 25 pages: cover + 24 friendly forest animal coloring pages. A4 PDF. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/ntawdj?offer_code=BLACKFRIDAY30",
+  "keyword": "Animal coloring book",
+  "shelf": "animals",
+  "pages": 25,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/forest-animal-friends/deer.webp",
+    "label": "A friendly deer — an easy page"
+   },
+   {
+    "src": "assets/previews/forest-animal-friends/red-panda.webp",
+    "label": "Red panda on a branch — a detailed page"
+   },
+   {
+    "src": "assets/previews/forest-animal-friends/fox.webp",
+    "label": "Fox in the forest — a detailed page"
+   }
+  ]
+ },
+ {
+  "slug": "amazing-wildlife-vol-2",
+  "title": "Amazing Wildlife Vol. 2",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 3.99,
+  "image": "assets/covers/amazing-wildlife-vol2.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e3f3f1",
+  "description": "Wild animals coloring book — 24 printable wildlife coloring pages for kids. A4 and US Letter PDFs.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/vrizh?offer_code=BLACKFRIDAY30",
+  "keyword": "Wild animals coloring book",
+  "shelf": "animals",
+  "pages": 24,
+  "sizes": "A4 + Letter"
+ },
+ {
+  "slug": "my-school-day-boy",
+  "title": "My School Day — Boy Edition",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 3.99,
+  "image": "assets/covers/my-school-day-boy.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e5f2fd",
+  "description": "Back to school coloring book — 24 coloring pages following a boy through his school day. A4 PDF. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/xdeex?offer_code=BLACKFRIDAY30",
+  "keyword": "Back to school coloring book",
+  "shelf": "school",
+  "pages": 24,
+  "sizes": "A4"
+ },
+ {
+  "slug": "my-school-day-girl",
+  "title": "My School Day — Girl Edition",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 3.99,
+  "image": "assets/covers/my-school-day-girl.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fce6e9",
+  "description": "Back to school coloring book — 24 coloring pages following a girl through her school day, from waking up to bedtime. A4 PDF. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/nxyfe?offer_code=BLACKFRIDAY30",
+  "keyword": "Back to school coloring book",
+  "shelf": "school",
+  "pages": 24,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/my-school-day-girl/wake-up.webp",
+    "label": "Waking up — the day begins"
+   },
+   {
+    "src": "assets/previews/my-school-day-girl/class.webp",
+    "label": "At school — a detailed page"
+   },
+   {
+    "src": "assets/previews/my-school-day-girl/bedtime.webp",
+    "label": "Bedtime — the day ends"
+   }
+  ]
+ },
+ {
+  "slug": "summer-seaside-boy",
+  "title": "Summer Seaside — Boy Edition",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 3.99,
+  "image": "assets/covers/summer-seaside-boy.webp",
+  "width": 430,
+  "height": 617,
+  "cardColor": "#e4f3fa",
+  "description": "Summer coloring pages for kids — a seaside coloring adventure: 26 pages, cover + 25 coloring pages including a bonus ice-cream page. A4 and US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/meavla?offer_code=BLACKFRIDAY30",
+  "keyword": "Summer coloring pages for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/summer-seaside-boy/waking-up.webp",
+    "label": "Waking up, dreaming of the beach"
+   },
+   {
+    "src": "assets/previews/summer-seaside-boy/sandcastle.webp",
+    "label": "Building a sandcastle"
+   },
+   {
+    "src": "assets/previews/summer-seaside-boy/ice-cream.webp",
+    "label": "Ice-cream time — the bonus page"
+   }
+  ]
+ },
+ {
+  "slug": "summer-seaside-girl",
+  "title": "Summer Seaside — Girl Edition",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 3.99,
+  "image": "assets/covers/summer-seaside-girl.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fde9e2",
+  "description": "Summer coloring pages for kids — a seaside coloring adventure: 26 pages, cover + 25 coloring pages including a bonus ice-cream page. A4 and US Letter PDFs. Instant download.",
+  "purchaseUrl": "",
+  "keyword": "Summer coloring pages for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/summer-seaside-girl/waking-up.webp",
+    "label": "Waking up, dreaming of the beach"
+   },
+   {
+    "src": "assets/previews/summer-seaside-girl/sandcastle.webp",
+    "label": "Building a sandcastle"
+   },
+   {
+    "src": "assets/previews/summer-seaside-girl/ice-cream.webp",
+    "label": "Ice-cream time — the bonus page"
+   }
+  ]
+ },
+ {
+  "slug": "my-amusement-park",
+  "title": "My Amusement Park",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 3.99,
+  "image": "assets/covers/my-amusement-park.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fdf3d7",
+  "description": "Amusement park coloring book for kids — 25 coloring pages following three friends through a day at the fair: the park gates, a roller coaster, a pirate ship, and more. Every page includes a color guide and swatches. A4 and US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/goxuj?offer_code=BLACKFRIDAY30",
+  "keyword": "Amusement park coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/my-amusement-park/park-gates.webp",
+    "label": "Welcome to the park"
+   },
+   {
+    "src": "assets/previews/my-amusement-park/roller-coaster.webp",
+    "label": "Roller coaster ride"
+   },
+   {
+    "src": "assets/previews/my-amusement-park/pirate-ship.webp",
+    "label": "Pirate ship adventure"
+   }
+  ]
+ },
+ {
+  "slug": "little-garden-neighbors",
+  "title": "Little Garden Neighbors",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 3.99,
+  "image": "assets/covers/little-garden-neighbors.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e7f3dc",
+  "description": "Easy coloring pages for kids — 24 printable pages of garden creatures and nature. A4 and US Letter PDFs.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/kpuvt?offer_code=BLACKFRIDAY30",
+  "keyword": "Easy coloring pages for kids",
+  "shelf": "ages-4-7",
+  "pages": 24,
+  "sizes": "A4 + Letter"
+ },
+ {
+  "slug": "cute-wild-animals",
+  "title": "Cute Wild Animals",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 2.25,
+  "image": "assets/covers/wild-animals.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fcefd7",
+  "description": "Cute animal coloring pages — 11 printable pages of wild animals. A4 PDF.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/bsacyp?offer_code=BLACKFRIDAY30",
+  "keyword": "Cute animal coloring pages",
+  "shelf": "ages-4-7",
+  "pages": 11,
+  "sizes": "A4"
+ },
+ {
+  "slug": "farm-and-friends",
+  "title": "Farm & Friends",
+  "category": "kids",
+  "kind": "Coloring book",
+  "price": 2.25,
+  "image": "assets/covers/farm-animals.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f4eee0",
+  "description": "Farm animals coloring book — 10 printable pages of farm animals. A4 PDF.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/rfuqjm?offer_code=BLACKFRIDAY30",
+  "keyword": "Farm animals coloring book",
+  "shelf": "ages-4-7",
+  "pages": 10,
+  "sizes": "A4"
+ },
+ {
+  "slug": "cute-cow",
+  "title": "Cute Cow Mini-Pack",
+  "category": "kids",
+  "kind": "Coloring pack",
+  "price": 1.49,
+  "image": "assets/covers/cow-mini-pack.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fce7ed",
+  "description": "Cow coloring pages — 10 printable pages starring the same cow throughout. A4 PDF.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/gbczty?offer_code=BLACKFRIDAY30",
+  "keyword": "Cow coloring pages",
+  "shelf": "ages-4-7",
+  "pages": 10,
+  "sizes": "A4"
+ },
+ {
+  "slug": "nile-mandalas",
+  "title": "Nile Mandalas",
+  "category": "adults",
+  "kind": "Coloring book",
+  "label": "For adults",
+  "price": 6.99,
+  "image": "assets/covers/nile-mandalas-adults.webp",
+  "width": 325,
+  "height": 650,
+  "cardColor": "#e5eee8",
+  "description": "Mandala coloring book for adults — 22 detailed printable mandala designs for mindfulness and stress relief. A4 and US Letter PDFs.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/nile-mandalas?offer_code=BLACKFRIDAY30",
+  "keyword": "Mandala coloring book for adults",
+  "shelf": "quiet",
+  "pages": 24,
+  "sizes": "A4 + Letter"
+ },
+ {
+  "slug": "christmas-mandala-part-1",
+  "title": "Christmas Mandala Coloring Book — Part 1",
+  "category": "adults",
+  "kind": "Coloring book",
+  "label": "For adults",
+  "price": 3.99,
+  "image": "assets/covers/christmas-mandala-part-1.webp",
+  "width": 430,
+  "height": 860,
+  "cardColor": "#fdeaea",
+  "description": "Christmas mandala coloring book for adults — Part 1: 25 intricate printable Christmas mandala coloring pages (pages 1–25): a snowflake mandala, a Christmas wreath, reindeer antlers, Santa, a snowman, and more. Detailed mandalas for relaxing coloring and stress relief. A4 PDF. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/cgpdu?offer_code=BLACKFRIDAY30",
+  "keyword": "Christmas mandala coloring book",
+  "shelf": "quiet",
+  "pages": 26,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/christmas-mandala-part-1/snowflake-mandala.webp",
+    "label": "Snowflake mandala"
+   },
+   {
+    "src": "assets/previews/christmas-mandala-part-1/christmas-wreath.webp",
+    "label": "Christmas wreath with holly and pinecones"
+   },
+   {
+    "src": "assets/previews/christmas-mandala-part-1/reindeer-antlers.webp",
+    "label": "Reindeer antlers mandala"
+   }
+  ]
+ },
+ {
+  "slug": "christmas-mandala-part-2",
+  "title": "Christmas Mandala Coloring Book — Part 2",
+  "category": "adults",
+  "kind": "Coloring book",
+  "label": "For adults",
+  "price": 3.99,
+  "image": "assets/covers/christmas-mandala-part-2.webp",
+  "width": 430,
+  "height": 860,
+  "cardColor": "#e7f0e6",
+  "description": "Christmas mandala coloring book for adults — Part 2: 25 intricate printable Christmas mandala coloring pages (pages 26–50): a poinsettia mandala, a snow globe, Santa, a reindeer and a snowman around the tree, and more. Detailed mandalas for relaxing coloring and stress relief. A4 PDF. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/atmvd?offer_code=BLACKFRIDAY30",
+  "keyword": "Christmas mandala coloring book",
+  "shelf": "quiet",
+  "pages": 26,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/christmas-mandala-part-2/poinsettia-mandala.webp",
+    "label": "Poinsettia mandala"
+   },
+   {
+    "src": "assets/previews/christmas-mandala-part-2/snow-globe.webp",
+    "label": "Snow globe with a Christmas tree"
+   },
+   {
+    "src": "assets/previews/christmas-mandala-part-2/santa-and-friends.webp",
+    "label": "Santa, reindeer and snowman around the tree"
+   }
+  ]
+ },
+ {
+  "slug": "wild-farm-bundle",
+  "title": "Wild + Farm Animals",
+  "category": "kids",
+  "kind": "Bundle",
+  "price": 3.75,
+  "image": "assets/covers/bundle-1-plus-3.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e3f3ed",
+  "description": "Animal coloring book bundle — 21 wild and farm animal coloring pages in one set. A4 PDF. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/fkxuoc?offer_code=BLACKFRIDAY30",
+  "keyword": "Animal coloring book bundle",
+  "shelf": "animals",
+  "pages": 21,
+  "sizes": "A4"
+ },
+ {
+  "slug": "complete-animal-collection",
+  "title": "Complete Animal Collection",
+  "category": "kids",
+  "kind": "Bundle",
+  "price": 4.49,
+  "image": "assets/covers/full-set.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f3eafa",
+  "description": "The full animal coloring collection in one set — 32 printable pages. A4 PDF. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/mzzjupn?offer_code=BLACKFRIDAY30",
+  "keyword": "Printable coloring pages bundle",
+  "shelf": "animals",
+  "pages": 32,
+  "sizes": "A4"
+ }
 ]
