@@ -1,4 +1,4 @@
-// Nile Coloring Books — site v1.9.1 (Black Friday offer links + Creem live checkout).
+// Nile Coloring Books — site v1.9.2 (Black Friday offer links + Creem live checkout with discount).
 // The catalog is intentionally data-driven. Add new books to catalog.json.
 const catalogNode = document.querySelector("#catalog");
 const dialog = document.querySelector("#book-dialog");
@@ -17,6 +17,15 @@ const cardColor = value => /^#[0-9a-fA-F]{6}$/.test(value || "") ? value : "#edf
 const BF_CODE = "BLACKFRIDAY30";
 const BF_END = new Date("2026-11-30T23:59:59+02:00");
 const salePrice = price => price == null ? null : (Math.round(Number(price) * 70) / 100).toFixed(2);
+
+// Black Friday on Creem — verified checkout totals with BLACKFRIDAY30.
+// Creem rounds differently from Gumroad ($3.99 -> $2.80 on Creem, $2.79 on
+// Gumroad), so the Creem price is a lookup, never computed from salePrice().
+const CREEM_TOTALS = {"1.49": "1.05", "2.25": "1.58", "2.99": "2.10", "3.75": "2.63", "3.99": "2.80", "4.49": "3.15", "6.99": "4.90"};
+const creemPrice = price => price == null ? null : (CREEM_TOTALS[Number(price).toFixed(2)] || salePrice(price));
+// The price shown on a card/dialog is the cheapest actually-buyable sale
+// price: Gumroad's when a Gumroad link exists, otherwise Creem's.
+const shownSalePrice = book => book.purchaseUrl ? salePrice(book.price) : creemPrice(book.price);
 const money = value => "$" + Number(value).toFixed(2);
 
 function coverMarkup(book) {
@@ -42,7 +51,7 @@ function cardHTML(book) {
     <div class="book-meta"><span class="book-category">${escapeHTML(book.kind || "Coloring book")}</span>
       <h3>${escapeHTML(book.title)}</h3>
       <p class="book-pages">${book.pages ? `${book.pages} pages · ${escapeHTML(book.sizes || "A4")}` : ""}</p>
-      <div class="book-bottom"><span class="book-price">${book.price == null ? "Price pending" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</span>
+      <div class="book-bottom"><span class="book-price">${book.price == null ? "Price pending" : `<span class="sale-price">${money(shownSalePrice(book))}</span> <s class="was-price">${money(book.price)}</s>`}</span>
       <button type="button" data-book="${escapeHTML(book.slug)}">View book →</button></div>
     </div></article>`;
 }
@@ -76,7 +85,7 @@ function openBook(slug) {
     ? `<a class="button button-primary" href="${escapeHTML(checkoutURL.href)}" target="_blank" rel="noopener noreferrer">Get the book · ${book.price == null ? "See price" : money(salePrice(book.price))} →</a><p class="bf-dialog-note">🖤 Black Friday: 30% off applies automatically at checkout · Code <code class="bf-code">${BF_CODE}</code> — ends Nov 30, 2026.</p><p class="book-actual-note">Checkout opens on ${escapeHTML(checkoutURL.hostname)}.</p>`
     : "";
   const creemCheckout = creemURL
-    ? `<a class="button ${checkoutURL ? "button-secondary" : "button-primary"}" href="${escapeHTML(creemURL.href)}" target="_blank" rel="noopener noreferrer">${checkoutURL ? "Buy with Creem" : "Get the book"} · ${book.price == null ? "See price" : money(book.price)} →</a><p class="book-actual-note">Also on Creem — checkout opens on creem.io.</p>`
+    ? `<a class="button ${checkoutURL ? "button-secondary" : "button-primary"}" href="${escapeHTML(creemURL.href)}" target="_blank" rel="noopener noreferrer">${checkoutURL ? "Buy with Creem" : "Get the book"} · ${book.price == null ? "See price" : money(creemPrice(book.price))} →</a>${checkoutURL ? "" : `<p class="bf-dialog-note">🖤 Black Friday: 30% off applies automatically at checkout · Code <code class="bf-code">${BF_CODE}</code> — ends Nov 30, 2026.</p>`}<p class="book-actual-note">${checkoutURL ? "Also on Creem — checkout opens on creem.io." : "Checkout opens on creem.io."}</p>`
     : "";
   const checkout = (gumroadCheckout || creemCheckout)
     ? gumroadCheckout + creemCheckout
@@ -89,7 +98,7 @@ function openBook(slug) {
   dialogContent.innerHTML = `<div class="dialog-grid"><div class="dialog-cover">${coverMarkup(book)}</div>
     <div class="dialog-copy"><span class="mini-label">${escapeHTML(book.kind || "Coloring book")}</span>
       <h2 id="dialog-title">${escapeHTML(book.title)}</h2><p>${escapeHTML(book.description || "A printable coloring book to make your own.")}</p>
-      <p class="dialog-price">${book.price == null ? "Price to confirm" : `<span class="sale-price">${money(salePrice(book.price))}</span> <s class="was-price">${money(book.price)}</s>`}</p>
+      <p class="dialog-price">${book.price == null ? "Price to confirm" : `<span class="sale-price">${money(shownSalePrice(book))}</span> <s class="was-price">${money(book.price)}</s>`}</p>
       ${checkout}${previewHTML}<p><a href="/books/${encodeURIComponent(book.slug)}/">View full book page →</a></p>${awaiting}
     </div></div>`;
   dialog.showModal();
@@ -103,8 +112,9 @@ function safeCheckoutURL(value) {
     if (!(url.protocol === "https:" && (host === "gumroad.com" || host.endsWith(".gumroad.com") || host === "creem.io" || host.endsWith(".creem.io")))) return null;
     // v1.2.5: Gumroad checkout shows no discount-code field, so the offer
     // link must carry the code — set() is idempotent if catalog.json
-    // already has it.
+    // already has it. Same for Creem: the discount is redeemed via the link.
     if (host === "gumroad.com" || host.endsWith(".gumroad.com")) url.searchParams.set("offer_code", BF_CODE);
+    if (host === "creem.io" || host.endsWith(".creem.io")) url.searchParams.set("discount_code", BF_CODE);
     return url;
   } catch { return null; }
 }
