@@ -29,7 +29,8 @@
     "src": "assets/previews/little-nile-explorer/maze.webp",
     "label": "Help the Fish Find the Lotus — an activity page"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_3I5QdnJAzLQjuErpONtDQA"
  },
  {
   "slug": "forest-animal-friends",
@@ -60,7 +61,8 @@
     "src": "assets/previews/forest-animal-friends/fox.webp",
     "label": "Fox in the forest — a detailed page"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_7gAMYtfFHROZFrCe7jdoTe"
  },
  {
   "slug": "amazing-wildlife-vol-2",
@@ -77,7 +79,8 @@
   "keyword": "Wild animals coloring book",
   "shelf": "animals",
   "pages": 24,
-  "sizes": "A4 + Letter"
+  "sizes": "A4 + Letter",
+  "creemUrl": "https://www.creem.io/product/prod_6fCDcnY0kek1syg6O1FDGd"
  },
  {
   "slug": "my-school-day-boy",
@@ -94,7 +97,8 @@
   "keyword": "Back to school coloring book",
   "shelf": "school",
   "pages": 24,
-  "sizes": "A4"
+  "sizes": "A4",
+  "creemUrl": "https://www.creem.io/product/prod_47spADhIVpDJ4ve6M1rkyd"
  },
  {
   "slug": "my-school-day-girl",
@@ -125,7 +129,8 @@
     "src": "assets/previews/my-school-day-girl/bedtime.webp",
     "label": "Bedtime — the day ends"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_3di17dVKhYmxJTd8S1oiEm"
  },
  {
   "slug": "summer-seaside-boy",
@@ -156,7 +161,8 @@
     "src": "assets/previews/summer-seaside-boy/ice-cream.webp",
     "label": "Ice-cream time — the bonus page"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_2Nx2qNeZ4NnTLbkAlvJFCP"
  },
  {
   "slug": "summer-seaside-girl",
@@ -187,7 +193,8 @@
     "src": "assets/previews/summer-seaside-girl/ice-cream.webp",
     "label": "Ice-cream time — the bonus page"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_6qXVGxIcNPRcbz1sDxU53i"
  },
  {
   "slug": "my-amusement-park",
@@ -218,7 +225,8 @@
     "src": "assets/previews/my-amusement-park/pirate-ship.webp",
     "label": "Pirate ship adventure"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_Fgcir2he9Mrag8c94Zo86"
  },
  {
   "slug": "little-garden-neighbors",
@@ -235,7 +243,8 @@
   "keyword": "Easy coloring pages for kids",
   "shelf": "ages-4-7",
   "pages": 24,
-  "sizes": "A4 + Letter"
+  "sizes": "A4 + Letter",
+  "creemUrl": "https://www.creem.io/product/prod_4GcNNH6OaOQNkmAqYZTvlX"
  },
  {
   "slug": "cute-wild-animals",
@@ -252,7 +261,8 @@
   "keyword": "Cute animal coloring pages",
   "shelf": "ages-4-7",
   "pages": 11,
-  "sizes": "A4"
+  "sizes": "A4",
+  "creemUrl": "https://www.creem.io/product/prod_2YxFJatu60n2nlJozgWG9k"
  },
  {
   "slug": "farm-and-friends",
@@ -269,7 +279,8 @@
   "keyword": "Farm animals coloring book",
   "shelf": "ages-4-7",
   "pages": 10,
-  "sizes": "A4"
+  "sizes": "A4",
+  "creemUrl": "https://www.creem.io/product/prod_4zERVp1veEcLqKne2cblqT"
  },
  {
   "slug": "cute-cow",
@@ -286,7 +297,8 @@
   "keyword": "Cow coloring pages",
   "shelf": "ages-4-7",
   "pages": 10,
-  "sizes": "A4"
+  "sizes": "A4",
+  "creemUrl": "https://www.creem.io/product/prod_5QpoTxu7aIQI6yhIdwZ7e"
  },
  {
   "slug": "nile-mandalas",
@@ -304,7 +316,8 @@
   "keyword": "Mandala coloring book for adults",
   "shelf": "quiet",
   "pages": 24,
-  "sizes": "A4 + Letter"
+  "sizes": "A4 + Letter",
+  "creemUrl": "https://www.creem.io/product/prod_ziM18Yf1My03gbfwMWpUa"
  },
  {
   "slug": "christmas-mandala-part-1",
@@ -336,7 +349,8 @@
     "src": "assets/previews/christmas-mandala-part-1/reindeer-antlers.webp",
     "label": "Reindeer antlers mandala"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_npeE5TiJH0aPTYrGIYZen"
  },
  {
   "slug": "christmas-mandala-part-2",
@@ -368,7 +382,8 @@
     "src": "assets/previews/christmas-mandala-part-2/santa-and-friends.webp",
     "label": "Santa, reindeer and snowman around the tree"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_38YsX1OxyHTkNDj2YI4x1W"
  },
  {
   "slug": "pharaonic-mandala-book-1-pharaohs",
@@ -400,7 +415,8 @@
     "src": "assets/previews/pharaonic-mandala-book-1-pharaohs/uraeus-cobra.webp",
     "label": "Uraeus cobra crown mandala"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_PmJYPVr1LhgpJh6SeeLlr"
  },
  {
   "slug": "pharaonic-mandala-book-2-egyptian-gods",
@@ -432,7 +448,8 @@
     "src": "assets/previews/pharaonic-mandala-book-2-egyptian-gods/temple-columns.webp",
     "label": "Temple columns with lotus capitals"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_6eJaMgKVfGcJuvcpoFhlgx"
  },
  {
   "slug": "pharaonic-mandala-book-3-nile-life",
@@ -464,7 +481,8 @@
     "src": "assets/previews/pharaonic-mandala-book-3-nile-life/nile-goose.webp",
     "label": "Goose in a lotus ring"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_3Jcj9GPh7AsSfILRnn8hoD"
  },
  {
   "slug": "pharaonic-mandala-book-4-pyramids-treasures",
@@ -496,7 +514,8 @@
     "src": "assets/previews/pharaonic-mandala-book-4-pyramids-treasures/solar-boat.webp",
     "label": "Ra’s solar boat"
    }
-  ]
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_9KMft4eIaqPsp8IwJ6h1C"
  },
  {
   "slug": "wild-farm-bundle",
@@ -513,7 +532,8 @@
   "keyword": "Animal coloring book bundle",
   "shelf": "animals",
   "pages": 21,
-  "sizes": "A4"
+  "sizes": "A4",
+  "creemUrl": "https://www.creem.io/product/prod_3QJc3dQETmcMz5KsXZdVQH"
  },
  {
   "slug": "complete-animal-collection",
@@ -530,6 +550,7 @@
   "keyword": "Printable coloring pages bundle",
   "shelf": "animals",
   "pages": 32,
-  "sizes": "A4"
+  "sizes": "A4",
+  "creemUrl": "https://www.creem.io/product/prod_3wEZx84GT3Ceo2MOXnucbP"
  }
 ]

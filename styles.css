@@ -116,3 +116,9 @@
 .discover-buy .bf-dialog-note{margin:0 0 14px}
 @media(max-width:1050px){.catalog-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.discover-grid{grid-template-columns:220px 1fr;gap:24px}.discover-buy{grid-column:1/-1}}
 @media(max-width:740px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.preview-gallery{grid-template-columns:1fr;max-width:420px;margin:0 auto}.discover-grid{grid-template-columns:1fr}.discover-pages{grid-template-columns:repeat(3,1fr);gap:8px}.discover-cover{max-width:280px;margin:0 auto}}
+
+/* v1.9.1 — Creem checkout: second buy button next to the Gumroad button. */
+.buy-buttons{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.button-secondary{background:#fff;border:2px solid var(--ink);padding:13px 25px;box-shadow:4px 5px 0 var(--ink);font-size:.97rem}
+.button-secondary:hover{transform:translateY(-3px);box-shadow:4px 8px 0 var(--ink)}
+.button-secondary:active{transform:translateY(3px);box-shadow:2px 2px 0 var(--ink)}

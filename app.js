@@ -1,4 +1,4 @@
-// Nile Coloring Books — site v1.2.5 (Black Friday offer links).
+// Nile Coloring Books — site v1.9.1 (Black Friday offer links + Creem live checkout).
 // The catalog is intentionally data-driven. Add new books to catalog.json.
 const catalogNode = document.querySelector("#catalog");
 const dialog = document.querySelector("#book-dialog");
@@ -71,8 +71,15 @@ function openBook(slug) {
   const book = products.find(item => item.slug === slug);
   if (!book) return;
   const checkoutURL = safeCheckoutURL(book.purchaseUrl);
-  const checkout = checkoutURL
+  const creemURL = safeCheckoutURL(book.creemUrl);
+  const gumroadCheckout = checkoutURL
     ? `<a class="button button-primary" href="${escapeHTML(checkoutURL.href)}" target="_blank" rel="noopener noreferrer">Get the book · ${book.price == null ? "See price" : money(salePrice(book.price))} →</a><p class="bf-dialog-note">🖤 Black Friday: 30% off applies automatically at checkout · Code <code class="bf-code">${BF_CODE}</code> — ends Nov 30, 2026.</p><p class="book-actual-note">Checkout opens on ${escapeHTML(checkoutURL.hostname)}.</p>`
+    : "";
+  const creemCheckout = creemURL
+    ? `<a class="button ${checkoutURL ? "button-secondary" : "button-primary"}" href="${escapeHTML(creemURL.href)}" target="_blank" rel="noopener noreferrer">${checkoutURL ? "Buy with Creem" : "Get the book"} · ${book.price == null ? "See price" : money(book.price)} →</a><p class="book-actual-note">Also on Creem — checkout opens on creem.io.</p>`
+    : "";
+  const checkout = (gumroadCheckout || creemCheckout)
+    ? gumroadCheckout + creemCheckout
     : '<p class="pending-link">Purchase link pending. This preview does not take payments.</p>';
   const previews = Array.isArray(book.previews) ? book.previews : [];
   const previewHTML = previews.length
