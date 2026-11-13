@@ -650,6 +650,42 @@
   "creemUrl": "https://www.creem.io/product/prod_3mPtJzbySElkbbVp1qCKxq?discount_code=BLACKFRIDAY30"
  },
  {
+  "slug": "navy-monarch-coloring-story-part-5",
+  "title": "Navy Monarch Coloring Story — Part 5: The Garden of Light",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/navy-monarch-part-5.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e6f4ea",
+  "description": "25 coloring pages following Navy Monarch and her friends into a garden of light: a rooftop star chart, a garden path with the little creature, a flower arch, a sword among thorns, a rope bridge over a stream, a giant sunflower, and a motorcycle finale at sunrise. Every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/mtmrdl?offer_code=BLACKFRIDAY30",
+  "keyword": "Navy Monarch coloring story book for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/navy-monarch-part-5/garden-path.webp",
+    "alt": "The garden path — a real page from this book",
+    "caption": "The garden path"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-5/giant-sunflower.webp",
+    "alt": "The giant sunflower — a real page from this book",
+    "caption": "The giant sunflower"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-5/motorcycle-finale.webp",
+    "alt": "Motorcycle finale at sunrise — a real page from this book",
+    "caption": "Motorcycle finale at sunrise"
+   }
+  ],
+  "creemUrl": "https://www.creem.io/product/prod_1qlUSX99nb6eKT0bWiPZDs?discount_code=BLACKFRIDAY30"
+ },
+ {
   "slug": "egypt-explorers-book-1-museum-adventure",
   "title": "Kids Explore Ancient Egypt — Book 1: Museum Adventure",
   "category": "kids",
