@@ -752,6 +752,39 @@
   "creemUrl": "https://www.creem.io/payment/prod_5PGYXnuaUzucSkQZVYGJUG?discount_code=BLACKFRIDAY30"
  },
  {
+  "slug": "navy-monarch-coloring-story-part-8",
+  "title": "Navy Monarch Coloring Story — Part 8: The Desert of Light",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/navy-monarch-part-8.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f7ead7",
+  "description": "25 coloring pages following Navy Monarch across the desert: the island in the shell, the lost little fox, the flower moth, the ship that sails on sand, and a garden on the moon finale. The Moth Prince, Lumo and baby Glow return along the way, and every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/gxmhje?offer_code=BLACKFRIDAY30",
+  "keyword": "Navy Monarch coloring story book for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/navy-monarch-part-8/island-in-the-shell.webp",
+    "label": "The island in the shell"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-8/little-fox-cub.webp",
+    "label": "Meeting the little fox cub"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-8/lantern-moth-dunes.webp",
+    "label": "The lantern moth and the fox cub in the dunes"
+   }
+  ],
+  "creemUrl": "https://www.creem.io/payment/prod_76XtSnhxveFctETh0pSLgG?discount_code=BLACKFRIDAY30"
+ },
+ {
   "slug": "egypt-explorers-book-1-museum-adventure",
   "title": "Kids Explore Ancient Egypt — Book 1: Museum Adventure",
   "category": "kids",
