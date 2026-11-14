@@ -19,7 +19,7 @@
   "previews": [
    {
     "src": "assets/previews/little-nile-explorer/frog.webp",
-    "label": "Frog in the reeds — an easy page"
+    "label": "Frog in the reeds — a medium page"
    },
    {
     "src": "assets/previews/little-nile-explorer/pyramids.webp",
@@ -786,5 +786,599 @@
   "pages": 32,
   "sizes": "A4",
   "creemUrl": "https://www.creem.io/product/prod_3wEZx84GT3Ceo2MOXnucbP?discount_code=BLACKFRIDAY30"
+ },
+ {
+  "slug": "little-city-detectives-b1-under-the-street",
+  "title": "Little City Detectives — Book 1: Under the Street",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-city-detectives-b1-under-the-street.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#cfe8f7",
+  "description": "Little City Detectives — Book 1: Under the Street. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. Leo, Mia and Ms. Emma go on a detective walk to discover what hides beneath the pavement — rainwater routes, the big water main, a fire hydrant, the traffic-signal box, house foundations and hidden drains — and follow the pipes all the way to a busy market-day street. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/jyrmib?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_1b3QctULORZNnEvfFsUDtF?discount_code=BLACKFRIDAY30",
+  "keyword": "Little City Detectives coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-city-detectives-b1-under-the-street/rainy-curb.webp",
+    "label": "A Rainy Curb"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b1-under-the-street/fire-hydrant-connection.webp",
+    "label": "The Fire Hydrant Connection"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b1-under-the-street/market-day.webp",
+    "label": "Market Day on Our Street"
+   }
+  ]
+ },
+ {
+  "slug": "little-city-detectives-b2-power-and-connections",
+  "title": "Little City Detectives — Book 2: Power and Connections",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-city-detectives-b2-power-and-connections.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fff0c7",
+  "description": "Little City Detectives — Book 2: Power and Connections. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. Leo, Mia and Ms. Emma chase the invisible power that lights up their city, from streetlights and the power station to substations, cables and fibre lines. They visit a data centre, the library and the hospital, and discover wind power, batteries and an electric bus charger — learning how electricity and messages travel all around the city. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/bkilb?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_5G52KnLahjWUHz8JxmBnJA?discount_code=BLACKFRIDAY30",
+  "keyword": "Little City Detectives coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-city-detectives-b2-power-and-connections/streetlights-wake.webp",
+    "label": "When the Streetlights Wake"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b2-power-and-connections/data-center-connects.webp",
+    "label": "How a Data Center Connects"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b2-power-and-connections/city-after-dark.webp",
+    "label": "A City After Dark"
+   }
+  ]
+ },
+ {
+  "slug": "little-city-detectives-b3-tunnels-and-trains",
+  "title": "Little City Detectives — Book 3: Tunnels and Trains",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-city-detectives-b3-tunnels-and-trains.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#d9f2dd",
+  "description": "Little City Detectives — Book 3: Tunnels and Trains. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. Leo, Mia and Ms. Emma ride down into the metro world under the city, exploring station stairs, lifts and platforms, the dark tunnel tube, signals and the control room. They meet the giant tunnel-boring machine, cross under the river, and read the station map to find their way to the transfer station and back home. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/afydvy?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_3gmqaNwZl4gDGwdUwqFPZv?discount_code=BLACKFRIDAY30",
+  "keyword": "Little City Detectives coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-city-detectives-b3-tunnels-and-trains/steps-into-station.webp",
+    "label": "Steps Into the Station"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b3-tunnels-and-trains/tunnel-boring-machine.webp",
+    "label": "The Tunnel-Boring Machine"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b3-tunnels-and-trains/big-transfer-station.webp",
+    "label": "The Big Transfer Station"
+   }
+  ]
+ },
+ {
+  "slug": "little-city-detectives-b4-how-the-whole-city-works",
+  "title": "Little City Detectives — Book 4: How the Whole City Works",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-city-detectives-b4-how-the-whole-city-works.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f3ddf2",
+  "description": "Little City Detectives — Book 4: How the Whole City Works. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. In the big finale, Leo, Mia and Ms. Emma put all the clues together — water, power, trains, recycling, compost, parks and kind neighbours — and see how every system fits into one living city. They discover that the whole city works together, and every neighbour plays a part in keeping it running. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/nkpauz?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_6ItmYOPgVrROftRwbSRBy8?discount_code=BLACKFRIDAY30",
+  "keyword": "Little City Detectives coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-city-detectives-b4-how-the-whole-city-works/good-morning-city.webp",
+    "label": "Good Morning, City"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b4-how-the-whole-city-works/bus-bike-and-train.webp",
+    "label": "Bus, Bike, and Train Together"
+   },
+   {
+    "src": "assets/previews/little-city-detectives-b4-how-the-whole-city-works/city-lights-at-sunset.webp",
+    "label": "City Lights at Sunset"
+   }
+  ]
+ },
+ {
+  "slug": "little-nature-architects-b1-forest-builders",
+  "title": "Little Nature Architects — Book 1: Forest Builders",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-nature-architects-b1-forest-builders.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e6f3d5",
+  "description": "Little Nature Architects — Book 1: Forest Builders. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. Leo, Mia and Ms. Emma explore the forest and discover how beavers build lodges and dams, meet woodpeckers, squirrels and a forest ranger, and peek inside a beaver lodge in a cutaway page. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs included. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/civqh?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_1UsZT5us917povlzYIa5Ir?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Nature Architects coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-nature-architects-b1-forest-builders/beaver-in-the-stream.webp",
+    "label": "A beaver in the stream"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b1-forest-builders/beaver-lodge.webp",
+    "label": "A beaver lodge in the forest"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b1-forest-builders/lodge-on-ice.webp",
+    "label": "The lodge on ice in winter"
+   }
+  ]
+ },
+ {
+  "slug": "little-nature-architects-b2-underground-architects",
+  "title": "Little Nature Architects — Book 2: Underground Architects",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-nature-architects-b2-underground-architects.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f3e3cf",
+  "description": "Little Nature Architects — Book 2: Underground Architects. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. Leo, Mia and Ms. Emma dig underground with ants, termites, moles and rabbits to explore tunnels, chambers and hidden homes beneath the soil. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs included. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/izcpag?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_52AhP0K7PO2uXSfhCvha2i?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Nature Architects coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-nature-architects-b2-underground-architects/queen-ant.webp",
+    "label": "The queen ant"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b2-underground-architects/rabbit-family-nest.webp",
+    "label": "A rabbit family in their underground nest"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b2-underground-architects/gopher-underground.webp",
+    "label": "A gopher at work underground"
+   }
+  ]
+ },
+ {
+  "slug": "little-nature-architects-b3-bird-architects",
+  "title": "Little Nature Architects — Book 3: Bird Architects",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-nature-architects-b3-bird-architects.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fff3c4",
+  "description": "Little Nature Architects — Book 3: Bird Architects. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. Leo, Mia and Ms. Emma meet the world's cleverest nest builders — weaver birds, bowerbirds, swallows and eagles — and discover more than ten different kinds of nests. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs included. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/nmndub?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_7dcxmNOqj4aXxBJyN4QNqS?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Nature Architects coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-nature-architects-b3-bird-architects/robin-with-twig.webp",
+    "label": "A robin flying with a twig"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b3-bird-architects/three-chicks.webp",
+    "label": "Three chicks and a parent with a worm"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b3-bird-architects/bird-finale.webp",
+    "label": "The finale — three birds and a nest"
+   }
+  ]
+ },
+ {
+  "slug": "little-nature-architects-b4-water-world-builders",
+  "title": "Little Nature Architects — Book 4: Water World Builders",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-nature-architects-b4-water-world-builders.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#d8eef7",
+  "description": "Little Nature Architects — Book 4: Water World Builders. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4-10. Leo, Mia and Ms. Emma dive underwater to see caddisfly cases, coral reefs, beaver dams and a pufferfish drawing giant sand art on the ocean floor. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs included. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/errzlw?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_H6Y32UPX6aYmgsXzAQOlR?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Nature Architects coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-nature-architects-b4-water-world-builders/stream-bank.webp",
+    "label": "On the stream bank"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b4-water-world-builders/dam-and-waterfall.webp",
+    "label": "The dam and waterfall with a frog"
+   },
+   {
+    "src": "assets/previews/little-nature-architects-b4-water-world-builders/pufferfish-sand-rosette.webp",
+    "label": "The pufferfish's sand rosette"
+   }
+  ]
+ },
+ {
+  "slug": "navy-monarch-coloring-story-part-6",
+  "title": "Navy Monarch Coloring Story — Part 6: The Starlight Sprout",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/navy-monarch-part-6.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e8f0ff",
+  "description": "25 coloring pages following Navy Monarch through a starlight adventure: a museum star chart, a rooftop butterfly over the city skyline, a giant moth spraying starlight, starlight stairs up through the clouds, a little girl watering a star flower that grows into a giant starlight tree, and a finale flying over the river and the city with the moths. The lantern girl Bella, the Moth Prince and baby Glow return, and every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/hhhlwb?offer_code=BLACKFRIDAY30",
+  "keyword": "Navy Monarch coloring story book for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/navy-monarch-part-6/giant-moth-starlight.webp",
+    "label": "The giant moth spraying starlight over the city"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-6/watering-the-star-flower.webp",
+    "label": "Watering the star flower"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-6/giant-starlight-flower.webp",
+    "label": "The giant starlight flower, all the creatures gathered"
+   }
+  ],
+  "creemUrl": "https://www.creem.io/payment/prod_1tfwsJai2MaWJLZX0LOdz1?discount_code=BLACKFRIDAY30"
+ },
+ {
+  "slug": "navy-monarch-coloring-story-part-7",
+  "title": "Navy Monarch Coloring Story — Part 7: The Starlight Sea",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/navy-monarch-part-7.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e3f2f0",
+  "description": "25 coloring pages following Navy Monarch under the sea: a floating island beach, coral sun-rays, a rope dive, the Moth Prince with his lantern, Cora the coral girl, a boat with a starfish rope, jellyfish, a sword among pearls, and a sunrise flight finale. The Storm Moth, Lumo the Lantern Moth and baby Glow return along the way, and every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/gzctqc?offer_code=BLACKFRIDAY30",
+  "keyword": "Navy Monarch coloring story book for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/navy-monarch-part-7/moth-prince-lantern.webp",
+    "label": "The Moth Prince with his lantern"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-7/coral-girl.webp",
+    "label": "Cora, the coral girl"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-7/beach-bubble-island.webp",
+    "label": "The beach and the bubble island"
+   }
+  ],
+  "creemUrl": "https://www.creem.io/payment/prod_5PGYXnuaUzucSkQZVYGJUG?discount_code=BLACKFRIDAY30"
+ },
+ {
+  "slug": "little-night-explorers-b1-city-after-dark",
+  "title": "Little Night Explorers — Book 1: City After Dark",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-night-explorers-b1-city-after-dark.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#cfd9f8",
+  "description": "Little Night Explorers — Book 1: City After Dark. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma explore the city after dark and meet the night helpers — bakers, streetlight repairers, recycling crews, firefighters, nurses and more — then watch the first tram roll in as the sun rises. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/xdrfu?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_3cor3qxjDoxDtHKPQbEqqP?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Night Explorers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-night-explorers-b1-city-after-dark/bakery-window.webp",
+    "label": "The Bakery Window"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b1-city-after-dark/fire-station-lanterns.webp",
+    "label": "Fire Station Lanterns"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b1-city-after-dark/the-first-tram.webp",
+    "label": "The First Tram"
+   }
+  ]
+ },
+ {
+  "slug": "little-night-explorers-b2-midnight-transport",
+  "title": "Little Night Explorers — Book 2: Midnight Transport",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-night-explorers-b2-midnight-transport.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#ffe3ae",
+  "description": "Little Night Explorers — Book 2: Midnight Transport. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma ride through the night on trains, buses, ferries and planes, from the ticket hall at dusk to the harbour lighthouse and the parcel sorting station, and follow one parcel all the way to a front door. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/hbpmts?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_5aJIsSYsxUDxzian7w6e0k?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Night Explorers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-night-explorers-b2-midnight-transport/train-into-the-tunnel.webp",
+    "label": "Train into the Tunnel"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b2-midnight-transport/the-harbor-lighthouse.webp",
+    "label": "The Harbor Lighthouse"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b2-midnight-transport/a-parcel-reaches-a-home.webp",
+    "label": "A Parcel Reaches a Home"
+   }
+  ]
+ },
+ {
+  "slug": "little-night-explorers-b3-nighttime-food-journey",
+  "title": "Little Night Explorers — Book 3: Nighttime Food Journey",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-night-explorers-b3-nighttime-food-journey.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#ffd9c2",
+  "description": "Little Night Explorers — Book 3: Nighttime Food Journey. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma follow food from the farm to the breakfast table — pick fruit at sunset, watch dough rise in the bakery, visit the fish market and the dairy, and end with a family breakfast. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/ioenks?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_3nqa17nPGiUU7fsUg7t2bo?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Night Explorers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-night-explorers-b3-nighttime-food-journey/the-fruit-picking-team.webp",
+    "label": "The Fruit Picking Team"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b3-nighttime-food-journey/shaping-the-rolls.webp",
+    "label": "Shaping the Rolls"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b3-nighttime-food-journey/a-family-breakfast.webp",
+    "label": "A Family Breakfast"
+   }
+  ]
+ },
+ {
+  "slug": "little-night-explorers-b4-nature-by-moonlight",
+  "title": "Little Night Explorers — Book 4: Nature by Moonlight",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-night-explorers-b4-nature-by-moonlight.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#d3ecd2",
+  "description": "Little Night Explorers — Book 4: Nature by Moonlight. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma step quietly into the night with a park ranger — watch a silent owl fly, bats over the pond, fireflies in the grass and sea turtles nesting, then hear stories in the stars. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/rsrswz?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_1VblFetoKNwHuYe6GeNr6u?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Night Explorers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-night-explorers-b4-nature-by-moonlight/silent-owl-in-flight.webp",
+    "label": "Silent Owl in Flight"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b4-nature-by-moonlight/desert-fox-at-night.webp",
+    "label": "Desert Fox at Night"
+   },
+   {
+    "src": "assets/previews/little-night-explorers-b4-nature-by-moonlight/stories-in-the-stars.webp",
+    "label": "Stories in the Stars"
+   }
+  ]
+ },
+ {
+  "slug": "little-repair-heroes-b1-the-toy-rescue-workshop",
+  "title": "Little Repair Heroes — Book 1: The Toy Rescue Workshop",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-repair-heroes-b1-the-toy-rescue-workshop.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#ffe0d1",
+  "description": "Little Repair Heroes — Book 1: The Toy Rescue Workshop. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma open their little workshop to rescue broken toys: a red-and-blue wooden train that lost a wheel, a teddy with a loose ear, a rocket with a loose fin, a robot with a loose arm, and a wooden puzzle — ending with all five rescued toys standing proudly together on the shelf for a happy open house. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/cuyfd?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_44jL5VCbkbqfn6urZlblCJ?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Repair Heroes coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-repair-heroes-b1-the-toy-rescue-workshop/train-needs-help.webp",
+    "label": "A train needs help"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b1-the-toy-rescue-workshop/teddys-hug-test.webp",
+    "label": "Teddy's hug test"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b1-the-toy-rescue-workshop/first-rescue-collection.webp",
+    "label": "Our first rescue collection"
+   }
+  ]
+ },
+ {
+  "slug": "little-repair-heroes-b2-bikes-and-wheels-workshop",
+  "title": "Little Repair Heroes — Book 2: Bikes & Wheels Workshop",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-repair-heroes-b2-bikes-and-wheels-workshop.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#d9ecff",
+  "description": "Little Repair Heroes — Book 2: Bikes & Wheels Workshop. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo's blue bike has a wobbly wheel, so Leo, Mia and Ms. Emma get to work — checking helmets, truing the wheel, pumping air, fitting a new tyre, fixing spokes and brakes, and oiling the chain. Then they help Mia fix her pink scooter, practise riding safely on the path and stopping at the crosswalk, and finally everyone rides together around the neighbourhood. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/obvojs?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_3jq94rlbBudTfPIzFQwTuZ?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Repair Heroes coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-repair-heroes-b2-bikes-and-wheels-workshop/bicycle-with-a-wobble.webp",
+    "label": "The bicycle with a wobble"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b2-bikes-and-wheels-workshop/bicycle-parking-rack.webp",
+    "label": "The bicycle parking rack"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b2-bikes-and-wheels-workshop/neighborhood-ride.webp",
+    "label": "The neighborhood ride"
+   }
+  ]
+ },
+ {
+  "slug": "little-repair-heroes-b3-fixing-everyday-things",
+  "title": "Little Repair Heroes — Book 3: Fixing Everyday Things",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-repair-heroes-b3-fixing-everyday-things.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e2f5d8",
+  "description": "Little Repair Heroes — Book 3: Fixing Everyday Things. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Mia's hot-pink backpack has a loose strap, so Leo, Mia and Ms. Emma set out to fix the everyday things around them — sewing on a missing shirt button, tying a new lace on a sneaker, mending a book's loose cover, fixing an umbrella's rib and testing it in the rain, and tightening a chair's loose screw — then carrying all their fixed treasures to a community corner to share. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/hrlvfb?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_3RcDNcFxcDuXSAvgtIaw9e?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Repair Heroes coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-repair-heroes-b3-fixing-everyday-things/backpack-with-a-torn-strap.webp",
+    "label": "The backpack with a torn strap"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b3-fixing-everyday-things/dry-day-under-the-umbrella.webp",
+    "label": "A dry day under the umbrella"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b3-fixing-everyday-things/one-more-thing-saved.webp",
+    "label": "One more thing saved"
+   }
+  ]
+ },
+ {
+  "slug": "little-repair-heroes-b4-the-great-repair-festival",
+  "title": "Little Repair Heroes — Book 4: The Great Repair Festival",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-repair-heroes-b4-the-great-repair-festival.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#f3e2ff",
+  "description": "Little Repair Heroes — Book 4: The Great Repair Festival. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma plan a big Repair Festival with four stations — toys, wheels, books and mending — plus volunteer badges, colourful tents and a tool check. Visitors arrive, the toy train parades, the wheels zone shines, and everyone admires the before-and-after wall — until a surprise rain cloud appears! The sun comes back out, and the festival ends with all their repaired heroes — train, bike, backpack and books — side by side. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/gxfxjn?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_5CXYPZqXANPWfrqlvpoVjR?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Repair Heroes coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-repair-heroes-b4-the-great-repair-festival/booth-for-toys.webp",
+    "label": "A booth for toys"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b4-the-great-repair-festival/toy-train-parade.webp",
+    "label": "A toy train parade"
+   },
+   {
+    "src": "assets/previews/little-repair-heroes-b4-the-great-repair-festival/city-that-repairs-together.webp",
+    "label": "A city that repairs together"
+   }
+  ]
  }
 ]
