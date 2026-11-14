@@ -686,6 +686,72 @@
   "creemUrl": "https://www.creem.io/product/prod_1qlUSX99nb6eKT0bWiPZDs?discount_code=BLACKFRIDAY30"
  },
  {
+  "slug": "navy-monarch-coloring-story-part-6",
+  "title": "Navy Monarch Coloring Story — Part 6: The Starlight Sprout",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/navy-monarch-part-6.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e8f0ff",
+  "description": "25 coloring pages following Navy Monarch through a starlight adventure: a museum star chart, a rooftop butterfly over the city skyline, a giant moth spraying starlight, starlight stairs up through the clouds, a little girl watering a star flower that grows into a giant starlight tree, and a finale flying over the river and the city with the moths. The lantern girl Bella, the Moth Prince and baby Glow return, and every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/hhhlwb?offer_code=BLACKFRIDAY30",
+  "keyword": "Navy Monarch coloring story book for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/navy-monarch-part-6/giant-moth-starlight.webp",
+    "label": "The giant moth spraying starlight over the city"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-6/watering-the-star-flower.webp",
+    "label": "Watering the star flower"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-6/giant-starlight-flower.webp",
+    "label": "The giant starlight flower, all the creatures gathered"
+   }
+  ],
+  "creemUrl": "https://www.creem.io/payment/prod_1tfwsJai2MaWJLZX0LOdz1?discount_code=BLACKFRIDAY30"
+ },
+ {
+  "slug": "navy-monarch-coloring-story-part-7",
+  "title": "Navy Monarch Coloring Story — Part 7: The Starlight Sea",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/navy-monarch-part-7.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#e3f2f0",
+  "description": "25 coloring pages following Navy Monarch under the sea: a floating island beach, coral sun-rays, a rope dive, the Moth Prince with his lantern, Cora the coral girl, a boat with a starfish rope, jellyfish, a sword among pearls, and a sunrise flight finale. The Storm Moth, Lumo the Lantern Moth and baby Glow return along the way, and every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/gzctqc?offer_code=BLACKFRIDAY30",
+  "keyword": "Navy Monarch coloring story book for kids",
+  "shelf": "ages-4-7",
+  "pages": 26,
+  "sizes": "A4 + Letter",
+  "previews": [
+   {
+    "src": "assets/previews/navy-monarch-part-7/moth-prince-lantern.webp",
+    "label": "The Moth Prince with his lantern"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-7/coral-girl.webp",
+    "label": "Cora, the coral girl"
+   },
+   {
+    "src": "assets/previews/navy-monarch-part-7/beach-bubble-island.webp",
+    "label": "The beach and the bubble island"
+   }
+  ],
+  "creemUrl": "https://www.creem.io/payment/prod_5PGYXnuaUzucSkQZVYGJUG?discount_code=BLACKFRIDAY30"
+ },
+ {
   "slug": "egypt-explorers-book-1-museum-adventure",
   "title": "Kids Explore Ancient Egypt — Book 1: Museum Adventure",
   "category": "kids",
@@ -1050,72 +1116,6 @@
     "label": "The pufferfish's sand rosette"
    }
   ]
- },
- {
-  "slug": "navy-monarch-coloring-story-part-6",
-  "title": "Navy Monarch Coloring Story — Part 6: The Starlight Sprout",
-  "category": "kids",
-  "kind": "Coloring book",
-  "label": "Ages 4–10",
-  "price": 3.99,
-  "image": "assets/covers/navy-monarch-part-6.webp",
-  "width": 430,
-  "height": 608,
-  "cardColor": "#e8f0ff",
-  "description": "25 coloring pages following Navy Monarch through a starlight adventure: a museum star chart, a rooftop butterfly over the city skyline, a giant moth spraying starlight, starlight stairs up through the clouds, a little girl watering a star flower that grows into a giant starlight tree, and a finale flying over the river and the city with the moths. The lantern girl Bella, the Moth Prince and baby Glow return, and every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
-  "purchaseUrl": "https://sherif261.gumroad.com/l/hhhlwb?offer_code=BLACKFRIDAY30",
-  "keyword": "Navy Monarch coloring story book for kids",
-  "shelf": "ages-4-7",
-  "pages": 26,
-  "sizes": "A4 + Letter",
-  "previews": [
-   {
-    "src": "assets/previews/navy-monarch-part-6/giant-moth-starlight.webp",
-    "label": "The giant moth spraying starlight over the city"
-   },
-   {
-    "src": "assets/previews/navy-monarch-part-6/watering-the-star-flower.webp",
-    "label": "Watering the star flower"
-   },
-   {
-    "src": "assets/previews/navy-monarch-part-6/giant-starlight-flower.webp",
-    "label": "The giant starlight flower, all the creatures gathered"
-   }
-  ],
-  "creemUrl": "https://www.creem.io/payment/prod_1tfwsJai2MaWJLZX0LOdz1?discount_code=BLACKFRIDAY30"
- },
- {
-  "slug": "navy-monarch-coloring-story-part-7",
-  "title": "Navy Monarch Coloring Story — Part 7: The Starlight Sea",
-  "category": "kids",
-  "kind": "Coloring book",
-  "label": "Ages 4–10",
-  "price": 3.99,
-  "image": "assets/covers/navy-monarch-part-7.webp",
-  "width": 430,
-  "height": 608,
-  "cardColor": "#e3f2f0",
-  "description": "25 coloring pages following Navy Monarch under the sea: a floating island beach, coral sun-rays, a rope dive, the Moth Prince with his lantern, Cora the coral girl, a boat with a starfish rope, jellyfish, a sword among pearls, and a sunrise flight finale. The Storm Moth, Lumo the Lantern Moth and baby Glow return along the way, and every page includes a color guide and swatches. A4 + US Letter PDFs. Instant download.",
-  "purchaseUrl": "https://sherif261.gumroad.com/l/gzctqc?offer_code=BLACKFRIDAY30",
-  "keyword": "Navy Monarch coloring story book for kids",
-  "shelf": "ages-4-7",
-  "pages": 26,
-  "sizes": "A4 + Letter",
-  "previews": [
-   {
-    "src": "assets/previews/navy-monarch-part-7/moth-prince-lantern.webp",
-    "label": "The Moth Prince with his lantern"
-   },
-   {
-    "src": "assets/previews/navy-monarch-part-7/coral-girl.webp",
-    "label": "Cora, the coral girl"
-   },
-   {
-    "src": "assets/previews/navy-monarch-part-7/beach-bubble-island.webp",
-    "label": "The beach and the bubble island"
-   }
-  ],
-  "creemUrl": "https://www.creem.io/payment/prod_5PGYXnuaUzucSkQZVYGJUG?discount_code=BLACKFRIDAY30"
  },
  {
   "slug": "little-night-explorers-b1-city-after-dark",
