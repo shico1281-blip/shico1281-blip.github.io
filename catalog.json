@@ -1413,5 +1413,137 @@
     "label": "A city that repairs together"
    }
   ]
+ },
+ {
+  "slug": "little-show-makers-b1-behind-the-magic-curtain",
+  "title": "Little Show Makers — Book 1: Behind the Magic Curtain",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-show-makers-b1-behind-the-magic-curtain.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fbdfe3",
+  "description": "Little Show Makers — Book 1: Behind the Magic Curtain. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma peek behind the magic curtain with Leo, Mia and Ms. Emma — meet Sam the stage technician and the backstage crew who build the castle set, sew the costumes and raise the curtain on the show. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/msoly?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_1dEnkOgJ6KJ9Hmmw0RXMTE?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Show Makers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-show-makers-b1-behind-the-magic-curtain/painting-the-castle.webp",
+    "label": "Painting the Castle"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b1-behind-the-magic-curtain/golden-light-on-the-castle.webp",
+    "label": "Golden Light on the Castle"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b1-behind-the-magic-curtain/the-curtain-rises.webp",
+    "label": "The Curtain Rises"
+   }
+  ]
+ },
+ {
+  "slug": "little-show-makers-b2-lights-camera-action",
+  "title": "Little Show Makers — Book 2: Lights, Camera, Action!",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-show-makers-b2-lights-camera-action.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#d7e8ff",
+  "description": "Little Show Makers — Book 2: Lights, Camera, Action!. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma step onto a film set with director Nora and editor Kai — cameras, clapperboards, boom mics and the cutting room, and see how a movie comes together take by take. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/nvwuij?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_aiDnnmJ91ub2FASuyfsvL?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Show Makers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-show-makers-b2-lights-camera-action/painting-the-sky-backdrop.webp",
+    "label": "Painting the Sky Backdrop"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b2-lights-camera-action/the-boom-mic.webp",
+    "label": "The Boom Mic"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b2-lights-camera-action/lobby-premiere.webp",
+    "label": "Lobby Premiere"
+   }
+  ]
+ },
+ {
+  "slug": "little-show-makers-b3-the-puppet-and-animation-studio",
+  "title": "Little Show Makers — Book 3: The Puppet and Animation Studio",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-show-makers-b3-the-puppet-and-animation-studio.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#fdf0c0",
+  "description": "Little Show Makers — Book 3: The Puppet and Animation Studio. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma visit Ava's puppet and animation studio — puppets on strings, a dragon puppet, a tiny puppet theatre and the cameras that bring drawings to life. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/ogcvan?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_60qeanUKHKsotkOI3Ksdxf?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Show Makers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-show-makers-b3-the-puppet-and-animation-studio/clay-colors-on-the-table.webp",
+    "label": "Clay Colors on the Table"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b3-the-puppet-and-animation-studio/flying-without-flying.webp",
+    "label": "Flying Without Flying"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b3-the-puppet-and-animation-studio/thank-you-tiny-heroes.webp",
+    "label": "Thank You, Tiny Heroes"
+   }
+  ]
+ },
+ {
+  "slug": "little-show-makers-b4-the-great-parade-makers",
+  "title": "Little Show Makers — Book 4: The Great Parade Makers",
+  "category": "kids",
+  "kind": "Coloring book",
+  "label": "Ages 4–10",
+  "price": 3.99,
+  "image": "assets/covers/little-show-makers-b4-the-great-parade-makers.webp",
+  "width": 430,
+  "height": 608,
+  "cardColor": "#d9f2e3",
+  "description": "Little Show Makers — Book 4: The Great Parade Makers. A 31-page (cover + 30 coloring pages) A4 coloring storybook for kids ages 4–10. Leo, Mia and Ms. Emma build the greatest parade ever — giant fish and turtle floats, costumed performers and a street full of music and celebration. Every page includes a color inset of its own scene and 7 color swatches. A4 PDFs. Instant download.",
+  "purchaseUrl": "https://sherif261.gumroad.com/l/jxtwyr?offer_code=BLACKFRIDAY30",
+  "creemUrl": "https://www.creem.io/payment/prod_6MUiHKduFeHPRbcgYi3FMK?discount_code=BLACKFRIDAY30",
+  "keyword": "Little Show Makers coloring book for kids",
+  "shelf": "ages-4-7",
+  "pages": 31,
+  "sizes": "A4",
+  "previews": [
+   {
+    "src": "assets/previews/little-show-makers-b4-the-great-parade-makers/a-friendly-giant-fish.webp",
+    "label": "A Friendly Giant Fish"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b4-the-great-parade-makers/painting-the-giant-turtle.webp",
+    "label": "Painting the Giant Turtle"
+   },
+   {
+    "src": "assets/previews/little-show-makers-b4-the-great-parade-makers/the-big-float-rolls-by.webp",
+    "label": "The Big Float Rolls By"
+   }
+  ]
  }
 ]
