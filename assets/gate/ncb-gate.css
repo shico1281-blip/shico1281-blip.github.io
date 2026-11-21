@@ -1,0 +1,200 @@
+/* ncb-gate.css — styles for the Nile Coloring Books email-capture gate.
+ * Pairs with gate/ncb-gate.js + gate/gate-modal.html. Plain CSS, no deps.
+ * Legal-text size rule (owner order 20 Nov 01:30 EET): the unsubscribe
+ * sentence is SMALLER and muted (~0.85em) than the consent sentence. */
+
+.ncb-gate-modal[hidden] { display: none; }
+
+.ncb-gate-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+
+.ncb-gate-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 28, 48, 0.6);
+}
+
+.ncb-gate-dialog {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  color: #1f2a44;
+  border-radius: 16px;
+  padding: 28px 24px 24px;
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.35);
+  font-family: inherit;
+  text-align: left;
+}
+
+.ncb-gate-x {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  border: 0;
+  background: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #59647b;
+  cursor: pointer;
+}
+
+.ncb-gate-dialog h2 {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+}
+
+.ncb-gate-intro {
+  margin: 0 0 18px;
+  color: #59647b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.ncb-gate-field {
+  display: block;
+  margin: 0 0 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.ncb-gate-field input {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 2px solid #c9d2e0;
+  border-radius: 10px;
+  font: inherit;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+.ncb-gate-field input:focus {
+  outline: none;
+  border-color: #ff7a3d;
+}
+
+.ncb-gate-error {
+  margin: 0 0 12px;
+  color: #c22e2e;
+  font-size: 0.88rem;
+}
+
+.ncb-gate-error[hidden] { display: none; }
+
+/* Consent label: consent sentence normal size; unsubscribe sentence
+ * smaller + muted, on the line below. Wording is verbatim — only the
+ * size changes. */
+.ncb-gate-consent {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 14px 0 4px;
+  font-size: 1rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.ncb-gate-consent input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: #ff7a3d;
+}
+
+.ncb-gate-unsubscribe {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.85em;
+  color: #59647b;
+}
+
+.ncb-gate-waitlist {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin: 12px 0 16px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.ncb-gate-waitlist input {
+  flex: none;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: #ff7a3d;
+}
+
+.ncb-gate-submit {
+  display: block;
+  width: 100%;
+  padding: 13px 16px;
+  border: 0;
+  border-radius: 12px;
+  background: #ff7a3d;
+  color: #fff;
+  font: inherit;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ncb-gate-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.ncb-gate-fineprint {
+  margin: 12px 0 0;
+  font-size: 0.85rem;
+  color: #59647b;
+  text-align: center;
+}
+
+body.ncb-gate-open { overflow: hidden; }
+
+/* Inline (footer) newsletter form variant — same legal text, same sizes. */
+.ncb-newsletter-form .ncb-gate-consent-text { display: block; }
+.ncb-newsletter-form [data-ncb-gate-form-message] { margin-top: 10px; }
+.ncb-newsletter-form [data-ncb-gate-form-message][data-error="true"] { color: #c22e2e; }
+.ncb-newsletter-form [data-ncb-gate-form-message][data-error="false"] { color: #2e7d32; }
+
+/* Privacy-page "Email" section — same size rule as the form. */
+.ncb-privacy-unsubscribe {
+  font-size: 0.85em;
+  color: #59647b;
+}
+
+/* After-coloring offer share button (idea 2, owner order 20 Nov 01:47 EET).
+ * Shown inside the offer block after a successful registration, next to
+ * the 40% registered-user offer. Same orange + rounding as the gate
+ * submit button; plain link, no backend — it opens a wa.me share. */
+.ncb-offer-share {
+  display: block;
+  margin-top: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: #ff7a3d;
+  color: #fff;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.ncb-offer-share:hover { filter: brightness(0.95); }

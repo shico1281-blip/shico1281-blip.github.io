@@ -7,7 +7,9 @@
 <meta name="description" content="Color our detailed beach family page in a big canvas — free to try, save your art as a PNG. Nile Coloring Books.">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="studio.css">
+<link rel="stylesheet" href="/assets/gate/ncb-gate.css">
 <script src="studio.js" defer></script>
+<script src="/assets/gate/ncb-gate.js" defer></script>
 </head>
 <body>
 <header class="ncb-topbar"><div class="wrap ncb-topbar-inner"><a class="ncb-back" href="https://nilecoloringbooks.com/">← Back to Nile Coloring Books</a><span class="ncb-topbar-brand">Nile Coloring Books</span></div></header>
@@ -68,8 +70,23 @@
             <button type="button" id="ncb-redo" disabled>Redo</button>
             <button type="button" id="ncb-reset" disabled>Start over</button>
           </div>
-          <button type="button" id="ncb-save" class="ncb-save">Save my art as PNG ↓</button>
-          <p class="ncb-privacy">No account needed. Your colors stay on this device; the downloaded picture includes our website and contact email.</p>
+          <button type="button" id="ncb-save" class="ncb-save" data-ncb-gate data-ncb-source="studio-beach" data-ncb-submit-label="Save my picture">Save my art as PNG ↓</button>
+          <p class="ncb-privacy">To save your picture, a parent or guardian registers once with a name and email — then saving is open. Your colors stay on this device; the downloaded picture includes our website and contact email.</p>
+          <div class="ncb-offer" id="ncb-offer" hidden aria-live="polite">
+            <p class="ncb-offer-main" id="ncb-offer-main"></p>
+            <!-- REGISTERED-ONLY 40% OFFER (owner order 20 Nov 01:47 EET) —
+                 this block only ever shows to registered users (see the
+                 script below). WELCOME40 is LIVE on both stores since
+                 20 Nov 02:21 EET (Gumroad $3.99 → $2.39; Creem $3.99 →
+                 $2.40 — Creem rounds the discount to $1.59). The line
+                 shows "40% off" with no dollar figure, so it is correct
+                 on both stores as-is. The public 30%
+                 BLACKFRIDAY30 offer for NON-registered visitors is NOT
+                 changed by this package and lives on the site's
+                 banners/book pages. -->
+            <p class="ncb-offer-bf">Your free pages are on the way — and as a thank-you for registering, all books are 40% off with code WELCOME40 (ends 30 November).</p>
+            <a class="ncb-offer-share" id="ncb-offer-share" href="https://wa.me/?text=My%20child%20just%20colored%20a%20free%20beach%20picture%20at%20Nile%20Coloring%20Books%20%E2%80%94%20color%20one%20too%3A%20https%3A%2F%2Fnilecoloringbooks.com%2Fcoloring-studio.html" target="_blank" rel="noopener">Share the studio with another parent ↗</a>
+          </div>
         </div>
       </div>
     </div>
@@ -77,7 +94,73 @@
   <div class="wrap studio-end"><span>Want more pages like this?</span><a href="https://nilecoloringbooks.com/#books">Explore the books <span aria-hidden="true">→</span></a></div>
 </section>
 </main>
-<footer class="ncb-pagefoot"><div class="wrap"><p><strong>Nile Coloring Books</strong> — printable coloring books for kids and grown-ups. Questions about an order? Email us: <a href="mailto:sherif.in.26@gmail.com">sherif.in.26@gmail.com</a></p><p>© <span id="year">2026</span> Nile Coloring Books · <a href="https://viesearch.com/2amuv/nile-coloring-books" target="_blank" rel="noopener noreferrer">Nile Coloring Books on Viesearch ↗</a></p></div></footer>
+<footer class="ncb-pagefoot"><div class="wrap"><p><strong>Nile Coloring Books</strong> — printable coloring books for kids and grown-ups. Questions about an order? Email us: <a href="mailto:sherif.in.26@gmail.com">sherif.in.26@gmail.com</a></p><p>© <span id="year">2026</span> Nile Coloring Books · <a href="https://viesearch.com/2amuv/nile-coloring-books" target="_blank" rel="noopener noreferrer">Nile Coloring Books on Viesearch ↗</a> · <a href="#" data-ncb-update-email>Update my email</a></p></div></footer>
 <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<!-- Gate modal (same fragment as gate/gate-modal.html; ncb-gate.js injects it if absent). -->
+<div class="ncb-gate-modal" id="ncb-gate-modal" hidden>
+  <div class="ncb-gate-backdrop" data-ncb-gate-close></div>
+  <div class="ncb-gate-dialog" role="dialog" aria-modal="true" aria-labelledby="ncb-gate-title">
+    <button type="button" class="ncb-gate-x" data-ncb-gate-close aria-label="Close">&times;</button>
+    <h2 id="ncb-gate-title">Get your free download</h2>
+    <p class="ncb-gate-intro">A parent or guardian registers once with a name and email — then downloads and saves are open. No account, no password.</p>
+    <form id="ncb-gate-form" novalidate>
+      <label class="ncb-gate-field" for="ncb-gate-name">Parent or guardian name
+        <input type="text" id="ncb-gate-name" name="name" autocomplete="name" required>
+      </label>
+      <p class="ncb-gate-error" id="ncb-gate-name-error" hidden>Please enter the parent or guardian&rsquo;s name.</p>
+      <label class="ncb-gate-field" for="ncb-gate-email">Parent or guardian email
+        <input type="email" id="ncb-gate-email" name="email" autocomplete="email" inputmode="email" required>
+      </label>
+      <p class="ncb-gate-error" id="ncb-gate-email-error" hidden>Please enter a valid email address.</p>
+      <label class="ncb-gate-consent">
+        <input type="checkbox" id="ncb-gate-consent" name="consent" required>
+        <span class="ncb-gate-consent-text">By entering your email, you agree to receive promotional emails and offers from Nile Coloring Books.
+          <span class="ncb-gate-unsubscribe">You can unsubscribe at any time by emailing sherif.in.26@gmail.com and asking to be removed from our email list &mdash; we will remove you and stop sending you promotional emails.</span>
+        </span>
+      </label>
+      <p class="ncb-gate-error" id="ncb-gate-consent-error" hidden>Please tick the consent box to continue.</p>
+      <label class="ncb-gate-waitlist">
+        <input type="checkbox" id="ncb-gate-waitlist" name="waitlist_personalized">
+        <span>I&rsquo;m interested in a personalized book starring my child</span>
+      </label>
+      <p class="ncb-gate-error" id="ncb-gate-error" role="alert" hidden>Something went wrong &mdash; please try again.</p>
+      <button type="submit" class="ncb-gate-submit" id="ncb-gate-submit">Get my free download</button>
+      <p class="ncb-gate-fineprint">We never ask for the child&rsquo;s name or any children&rsquo;s data. See our <a href="/privacy/">privacy page</a>.</p>
+    </form>
+  </div>
+</div>
+
+<script>
+/* After-coloring offer. Shows after a save completes. Two states; a
+ * registered user is never shown the form again for the offer. The 5-page
+ * email is a MANUAL send by the owner for now — no auto-mailer exists. */
+(function () {
+  var justRegistered = false;
+  var justEmail = "";
+  document.addEventListener("ncb-gate:registered", function (e) {
+    justRegistered = true;
+    justEmail = e.detail && e.detail.email ? e.detail.email : "";
+  });
+  var saveBtn = document.getElementById("ncb-save");
+  var offer = document.getElementById("ncb-offer");
+  var offerMain = document.getElementById("ncb-offer-main");
+  if (!saveBtn || !offer) return;
+  saveBtn.addEventListener("click", function () {
+    if (!window.NCBGate || !window.NCBGate.isRegistered()) return;
+    var email = justEmail || (window.NCBGate.getRegistration() || {}).email || "";
+    var wasJust = justRegistered;
+    justRegistered = false;
+    /* The studio renders the PNG async (toBlob); show the offer shortly
+     * after the click so it lands once the download has started. */
+    setTimeout(function () {
+      offerMain.textContent = wasJust
+        ? "You're in! We'll send 5 more free pages to " + email + "."
+        : "Want 5 more free pages in your inbox? You're on the list — we'll send them to " + email + ".";
+      offer.hidden = false;
+    }, 900);
+  });
+})();
+</script>
 </body>
 </html>
